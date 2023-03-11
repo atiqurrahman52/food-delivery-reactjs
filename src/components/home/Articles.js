@@ -21,14 +21,14 @@ const Articles = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {
                 articlesData.map(({id,img,title,description,readMore}) =>(
                   <Link to="#" key={id} className='hover:shadow-[0_20px_24px_-4px_rgba(0,0,0,0.08),0px_8px_8px_-4px_rgba(0,0,0,0.03)] transition duration-500 ease-out hover:ease-in'>
                   <div className="border border-[#D6D7D2]">
                     <div className="p-4 space-y-3">
                       <div className="flex justify-center w-full h-[232px]">
-                        <img src={img} alt="" />
+                        <img className="w-full" src={img} alt="" />
                       </div>
                       <p className="font-Raleway font-semibold text-base leading-6 text-primary">
                         {title}
