@@ -16,10 +16,10 @@
 }
 
 /* background images started  */
-/* .background-hero {
-    background: url("./../assets/image/hero/herosection.webp") no-repeat center;
+.background-hero {
+    background: url("./assets/image/hero/herosection.webp") no-repeat center;
     background-size: cover;
-  } */
+  }
   .footer-background {
     /* background-image: url("./../assets/image/footer/footer.webp"); */
     background-image: url("./assets/image/footer/footer.webp");
