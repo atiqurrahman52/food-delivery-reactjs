@@ -1,8 +1,10 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import BasicLayout from './layout/BasicLayout';
-import Blog from './components/blog/Blog';
+// import Blog from './components/blog/Blog';
 import Home from './pages/Home';
+import Blog from './pages/Blog';
+import BlogDetail from './components/blog/BlogDetail';
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
    {/* <Route index element={<Home />} /> */}
    <Route path='/' element={<Home />} />
    <Route path="/blog" element={<Blog />} />
+   <Route path="/blog-detail" element={<BlogDetail />} />
 
 
    </Route>

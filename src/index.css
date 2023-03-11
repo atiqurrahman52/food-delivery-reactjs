@@ -5,6 +5,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
+@font-face {
+  font-family: "edwardian_script_itcregular";
+  /* src: url("../assets/fonts/itcedscr-webfont.woff2") format("woff2"),
+    url("../assets/fonts/itcedscr-webfont.woff") format("woff"); */
+  src: url("./assets/fonts/itcedscr-webfont.woff2") format("woff2"),
+    url("./assets/fonts/itcedscr-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* background images started  */
 /* .background-hero {
     background: url("./../assets/image/hero/herosection.webp") no-repeat center;
@@ -14,39 +24,43 @@
     /* background-image: url("./../assets/image/footer/footer.webp"); */
     background-image: url("./assets/image/footer/footer.webp");
   }
-  /* .banner-background {
-    background-image: url("./../assets/image/banner/banner.png");
+   .banner-background {
+    background-image: url("./assets/image/banner/banner.png");
   }
   .banner-mobile-background {
-    background-image: url("./../assets/image/banner/mobile-banner.png");
+    background-image: url("./assets/image/banner/mobile-banner.png");
   }
-  .banner-shop {
+  /* .banner-shop {
     background-image: url("./../assets/image/shop/shop-banner.svg");
-  }
-  .subscribe-banner {
-    background-image: url("./../assets/image/shop/subscribe.webp");
-  }
-  .subscribe-banner-mobile {
-    background-image: url("./../assets/image/shop/mobile-subscribe.webp");
-  }
-  .about-banner {
-    background-image: url("./../assets/image/about/about-banner.webp");
-  }
-  .about-banner-mobile {
-    background-image: url("./../assets/image/about/about-banner-mobile.webp");
-  }
-  .recipes-banner {
-    background-image: url("./../assets/image/recipes/recipes-banner.webp");
-  }
-  .recipes-mobile-banner {
-    background-image: url("./../assets/image/recipes/recipes-mobile-banner.webp");
-  }
-  .blog-banner {
-    background-image: url("./../assets/image/blog/blog-banner.webp");
-  }
-  .not-found {
-    background-image: url("./../assets/image/not-found/not-found.webp");
   } */
+  /* .subscribe-banner {
+    background-image: url("./../assets/image/shop/subscribe.webp");
+  } */
+  /* .subscribe-banner-mobile {
+    background-image: url("./../assets/image/shop/mobile-subscribe.webp");
+  } */
+  /* .about-banner {
+    background-image: url("./../assets/image/about/about-banner.webp");
+  } */
+  /* .about-banner-mobile {
+    background-image: url("./../assets/image/about/about-banner-mobile.webp");
+  } */
+  /* .recipes-banner {
+    background-image: url("./../assets/image/recipes/recipes-banner.webp");
+  } */
+  /* .recipes-mobile-banner {
+    background-image: url("./../assets/image/recipes/recipes-mobile-banner.webp");
+  } */
+  .blog-banner {
+    background-image: url("./assets/image/blog/blog-banner.webp");
+  }
+  .blog-mobile-banner {
+    /* background-image: url("./../assets/image/blog/blog-banner.webp"); */
+    background-image: url("./assets/image/blog/blog-mobile-banner.webp");
+  }
+  /* .not-found {
+    background-image: url("./../assets/image/not-found/not-found.webp");
+  }  */
   /* background images end  */
 
 

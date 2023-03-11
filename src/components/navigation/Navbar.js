@@ -70,7 +70,7 @@ const Navbar = () => {
 
             <li className="">
               <button type="" className="">
-                <a href="./pages/profile.html">
+                <Link to='#'>
                   <svg
                     width="32"
                     height="32"
@@ -105,7 +105,7 @@ const Navbar = () => {
                       stroke-linejoin="round"
                     />
                   </svg>
-                </a>
+                </Link>
               </button>
             </li>
 

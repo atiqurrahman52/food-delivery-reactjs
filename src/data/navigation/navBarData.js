@@ -12,12 +12,12 @@ const navBarData =[
     {
         id:2,
         title:"Recipes",
-        path:'/recipes'
+        path:'#'
     },
     {
         id:3,
         title:"Shop",
-        path:'/shop'
+        path:'#'
     },
     {
         id:4,
