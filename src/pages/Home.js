@@ -4,6 +4,7 @@ import Banner from '../components/home/Banner';
 import CustomerFavorites from '../components/home/CustomerFavorites';
 import DeliveryWorks from '../components/home/DeliveryWorks';
 import HeroSection from '../components/home/HeroSection';
+import ImageGallery from '../components/home/ImageGallery';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <DeliveryWorks />
             <CustomerFavorites />
             <Banner />
+            <ImageGallery />
             <Articles />
         </div>
     );
