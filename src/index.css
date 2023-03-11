@@ -33,18 +33,18 @@
   /* .banner-shop {
     background-image: url("./../assets/image/shop/shop-banner.svg");
   } */
-  /* .subscribe-banner {
-    background-image: url("./../assets/image/shop/subscribe.webp");
-  } */
-  /* .subscribe-banner-mobile {
-    background-image: url("./../assets/image/shop/mobile-subscribe.webp");
-  } */
-  /* .about-banner {
-    background-image: url("./../assets/image/about/about-banner.webp");
-  } */
-  /* .about-banner-mobile {
-    background-image: url("./../assets/image/about/about-banner-mobile.webp");
-  } */
+  .subscribe-banner {
+    background-image: url("./assets/image/shop/subscribe.webp");
+  }
+  .subscribe-banner-mobile {
+    background-image: url("./assets/image/shop/mobile-subscribe.webp");
+  }
+  .about-banner {
+    background-image: url("./assets/image/about/about-banner.webp");
+  }
+  .about-banner-mobile {
+    background-image: url("./assets/image/about/about-banner-mobile.webp");
+  }
   /* .recipes-banner {
     background-image: url("./../assets/image/recipes/recipes-banner.webp");
   } */
@@ -99,6 +99,47 @@
     top: -30%;
   }
   .product-card:hover .add-to-cart-btn::before {
+    height: 400px;
+    width: 400px;
+    left: -40%;
+    bottom: -30%;
+  }
+
+  .banner-btn::before {
+    content: "";
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background: #febb41;
+    position: absolute;
+    bottom: -14px;
+    left: -14px;
+    transition: all 0.3s linear;
+    z-index: -1;
+  }
+  .banner-btn::after {
+    content: "";
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background: #febb41;
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    transition: all 0.3s linear;
+    z-index: -1;
+  }
+  
+  .product-card:hover .banner-btn {
+    color: black;
+  }
+  .product-card:hover .banner-btn::after {
+    height: 400px;
+    width: 400px;
+    right: -40%;
+    top: -30%;
+  }
+  .product-card:hover .banner-btn::before {
     height: 400px;
     width: 400px;
     left: -40%;

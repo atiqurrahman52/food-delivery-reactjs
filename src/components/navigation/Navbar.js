@@ -277,13 +277,13 @@ const Navbar = () => {
         <nav className="px-4 py-2 md:py-0">
           <div className="flex justify-between">
             <div className="flex justify-center items-center">
-              <a href="../index.html" className="md:hidden block w-8 h-8">
-                <img src="./assets/image/logo/logo.webp" alt="" />
-              </a>
+              <Link to='/' className="md:hidden block w-8 h-8">
+                <img src={logo} alt="" />
+              </Link>
             </div>
 
             <div className="flex gap-2.5 items-center">
-              {/* <div id="mob-cart-button" className="relative md:hidden block">
+              <div id="mob-cart-button" className="relative md:hidden block">
                 <button>
                   <svg
                     width="20"
@@ -317,7 +317,7 @@ const Navbar = () => {
                 <p className="bg-[#FF0000] rounded-full w-4 h-4 absolute -top-2.5 -right-1.5 shadow-[0px_2px_16px_1px_#FFB5B5] flex justify-center items-center font-Raleway font-medium text-xs text-white">
                   2
                 </p>
-              </div> */}
+              </div>
               {/* Cart List started  */}
               <div
                 id="mob-cart-menu"

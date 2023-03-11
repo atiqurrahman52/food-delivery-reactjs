@@ -1,5 +1,8 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import logo from '../../assets/image/footer/footer-logo.webp'
+import { navBarData } from "../../data/navigation/navBarData";
+import { socialData } from "../../data/sharedData/socialData";
 const Footer = () => {
   return (
     <div>
@@ -10,7 +13,7 @@ const Footer = () => {
               <div className="col-span-12 md:col-span-6 lg:col-span-4 mb-5 md:mb-0 text-center md:text-left">
                 <div className="mb-8 flex justify-center md:justify-start">
                   <a href="#" className="inline-block w-fit">
-                    <img src="./assets/image/footer/footer-logo.webp" alt="" />
+                    <img src={logo} alt="" />
                   </a>
                 </div>
                 <div className="mb-4 lg:mb-6">
@@ -43,71 +46,39 @@ const Footer = () => {
                 </div>
 
                 <div className="flex items-center justify-center md:justify-start space-x-3">
-                  <a href="#">
-                    <img src="./assets/image/footer/facebook.webp" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/image/footer/instagram.webp" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/image/footer/twitter.webp" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/image/footer/linkedin.webp" alt="" />
-                  </a>
+                  {
+                    socialData.map(({id,img,path}) =>(
+                      <Link to={path}>
+                       <img src={img} alt='' />
+                      </Link>
+                    ))
+                  }
+                  
                 </div>
               </div>
 
               <div className="col-span-6 md:col-span-3 lg:col-span-5">
                 <ul className="space-y-3">
-                  <li>
-                    <a
-                      href="./index.html"
+
+                  {navBarData.map(({id,title,path}) =>(
+                    <li>
+                    <Link key={id}
+                      to={path}
                       className="font-Raleway font-medium text-sm xl:text-base leading-[21px] xl:leading-6 text-yellow hover:text-white block md:text-end"
                     >
-                      Home
-                    </a>
+                      {title}
+                    </Link>
                   </li>
-                  <li>
-                    <a
-                      href="./pages/about.html"
-                      className="font-Raleway font-medium text-sm xl:text-base leading-[21px] xl:leading-6 text-yellow hover:text-white block md:text-end"
-                    >
-                      About
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="./pages/recipes.html"
-                      className="font-Raleway font-medium text-sm xl:text-base leading-[21px] xl:leading-6 text-yellow hover:text-white block md:text-end"
-                    >
-                      Recipes
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="./pages/shop.html"
-                      className="font-Raleway font-medium text-sm xl:text-base leading-[21px] xl:leading-6 text-yellow hover:text-white block md:text-end"
-                    >
-                      Shop
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="./pages/blog.html"
-                      className="font-Raleway font-medium text-sm xl:text-base leading-[21px] xl:leading-6 text-yellow hover:text-white block md:text-end"
-                    >
-                      Blog
-                    </a>
-                  </li>
+                  ))}
+                 
 
                   <li>
-                    <a
-                      href="./pages/sign-up.html"
+                    <Link
+                      // to="./pages/sign-up.html"
                       className="font-Raleway font-medium text-sm xl:text-base leading-[21px] xl:leading-6 text-yellow hover:text-white block md:text-end"
                     >
                       Sign Up
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

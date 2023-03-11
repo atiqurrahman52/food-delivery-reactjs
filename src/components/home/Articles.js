@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "@phosphor-icons/react";
+import { ArrowUpRight, CaretRight } from "@phosphor-icons/react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { articlesData } from "../../data/home/articlesData";
@@ -105,7 +105,8 @@ const Articles = () => {
                   See all Post
                 </p>
                 <span className="bg-white rounded-full w-7 h-7 flex justify-center items-center">
-                  <i className="ph-caret-right-bold text-success"></i>
+                  {/* <i className="ph-caret-right-bold text-success"></i> */}
+                  <CaretRight size={20} className='text-success' />
                 </span>
               </button>
             </div>
