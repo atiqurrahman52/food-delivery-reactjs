@@ -57,7 +57,7 @@ const OurTeam = () => {
                 allowTouchMove={true}
                 loopFillGroupWithBlank={true}
                 modules={[Autoplay,Navigation, Pagination]}
-                className="courseSlider !px-2 !py-10"
+                className="teamSlider !px-2 !py-10"
                 pagination={{
                   dynamicBullets: true,
                 }}

@@ -2,6 +2,8 @@ import { CaretRight } from "@phosphor-icons/react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { productData } from "../../data/sharedData/productData";
+import lemon from '../../assets/image/food/lemon.png';
+import strawberry from '../../assets/image/food/strawberry.png';
 
 const CustomerFavorites = () => {
   return (
@@ -9,7 +11,7 @@ const CustomerFavorites = () => {
       <div className="bg-[#F3F4EF]">
         <div className="container">
           <div className="py-10 lg:py-20">
-            <div className="flex justify-between items-center gap-6">
+            {/* <div className="flex justify-between items-center gap-6">
               <div className="hidden lg:block">
                 <img src="./assets/image/food/lemon.png" alt="" />
               </div>
@@ -27,6 +29,27 @@ const CustomerFavorites = () => {
               </div>
               <div className="hidden lg:block">
                 <img src="./assets/image/food/strawberry.png" alt="" />
+              </div>
+            </div> */}
+
+            <div className="relative">
+              <div className="xl:block hidden absolute lg:-left-24 lg:-top-16">
+                <img src={lemon} alt="" />
+              </div>
+              <div className="mb-10 lg:mb-14">
+                <h3 className="font-edwardian text-[32px] lg:text-[80px] leading-[10px]  text-primary opacity-[0.2] text-center">
+                  Our Products
+                </h3>
+                <h3 className="font-Playfair font-bold text-2xl lg:text-5xl leading-[29px] lg:leading-[58px] text-primary mb-2 text-center">
+                  Customer Favorites
+                </h3>
+                <p className="font-Raleway font-medium text-sm leading-[21pxpx] text-primary/60 text-center">
+                  Lorem ipsum dolor sit amet consectetur. i psum Lorem dolor sit
+                  amet consectetur.
+                </p>
+              </div>
+              <div className="xl:block hidden absolute lg:-right-24 lg:-top-28">
+                <img src={strawberry} alt="" />
               </div>
             </div>
 
@@ -69,7 +92,7 @@ const CustomerFavorites = () => {
                 </p>
                 <span className="bg-white rounded-full w-7 h-7 flex justify-center items-center">
                   <i className="ph-caret-right-bold text-success"></i>
-                  <CaretRight size={20} className='text-success ' />
+                  <CaretRight size={20} className="text-success " />
                 </span>
               </button>
             </div>

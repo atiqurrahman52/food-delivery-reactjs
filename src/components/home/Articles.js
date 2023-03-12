@@ -42,7 +42,7 @@ const Articles = () => {
                         <p className="font-Raleway font-medium text-sm leading-[21px]">
                          {readMore}
                         </p>
-                        {/* <i className="ph-arrow-up-right-bold text-2xl text-primary"></i> */}
+                        
                         <ArrowUpRight size={24} />
                       </div>
                     </div>
@@ -51,53 +51,7 @@ const Articles = () => {
                 ))
               }
 
-             
-
-              {/* <a href="#">
-                <div className="border border-[#D6D7D2]">
-                  <div className="p-4 space-y-3">
-                    <div className="flex justify-center w-full h-[232px]">
-                      <img src="./assets/image/blog/image-2.webp" alt="" />
-                    </div>
-                    <p className="font-Raleway font-semibold text-base leading-6 text-primary">
-                      Need sae food recipes for loose weight or balance weight?
-                    </p>
-                    <p className="font-Raleway text-sm lg:text-base leading-6 text-primary/60">
-                      Sed ut perspiciatis unde omnis iste natus sit voluptatem
-                      accusantium doloremque laudantium.......
-                    </p>
-                    <div className="flex items-center gap-2 text-primary font-medium text-sm leading-[21pxpx]">
-                      <p className="font-Raleway font-medium text-sm leading-[21px]">
-                        Read More
-                      </p>
-                      <i className="ph-arrow-up-right-bold text-2xl text-primary"></i>
-                    </div>
-                  </div>
-                </div>
-              </a>
-
-              <a href="#">
-                <div className="border border-[#D6D7D2]">
-                  <div className="p-4 space-y-3">
-                    <div className="flex justify-center w-full h-[232px]">
-                      <img src="./assets/image/blog/image-3.webp" alt="" />
-                    </div>
-                    <p className="font-Raleway font-semibold text-base leading-6 text-primary">
-                      Need sae food recipes for loose weight or balance weight?
-                    </p>
-                    <p className="font-Raleway text-sm lg:text-base leading-6 text-primary/60">
-                      Sed ut perspiciatis unde omnis iste natus sit voluptatem
-                      accusantium doloremque laudantium.......
-                    </p>
-                    <div className="flex items-center gap-2 text-primary font-medium text-sm leading-[21pxpx]">
-                      <p className="font-Raleway font-medium text-sm leading-[21px]">
-                        Read More
-                      </p>
-                      <i className="ph-arrow-up-right-bold text-2xl text-primary"></i>
-                    </div>
-                  </div>
-                </div>
-              </a> */}
+            
             </div>
             <div className="flex justify-center pt-6 lg:pt-8">
               <button className="flex items-center gap-2 py-3 px-4 w-[157px] h-[52px] rounded-[48px] bg-[#248C80]">

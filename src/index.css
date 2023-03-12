@@ -7,14 +7,16 @@
 
 @font-face {
   font-family: "edwardian_script_itcregular";
-  /* src: url("../assets/fonts/itcedscr-webfont.woff2") format("woff2"),
-    url("../assets/fonts/itcedscr-webfont.woff") format("woff"); */
   src: url("./assets/fonts/itcedscr-webfont.woff2") format("woff2"),
     url("./assets/fonts/itcedscr-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
+.sale{
+  background: linear-gradient(125.47deg, #248C80 37.4%, #105C53 85.68%);
+  box-shadow: 0px 20px 24px -4px rgba(0, 0, 0, 0.08), 0px 8px 8px -4px rgba(0, 0, 0, 0.03);
+}
 /* background images started  */
 .background-hero {
     background: url("./assets/image/hero/herosection.webp") no-repeat center;
