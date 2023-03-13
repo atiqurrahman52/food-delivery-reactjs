@@ -74,7 +74,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      // to="./pages/sign-up.html"
+                      to="/sign-up"
                       className="font-Raleway font-medium text-sm xl:text-base leading-[21px] xl:leading-6 text-yellow hover:text-white block md:text-end"
                     >
                       Sign Up

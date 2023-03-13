@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "@phosphor-icons/react";
+import { ArrowUpRight, CaretRight } from "@phosphor-icons/react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { featuredData } from "../../data/blog/featuredData";
@@ -59,39 +59,39 @@ const FeaturedAndRecentBlog = () => {
                 </div>
 
                 <div className="flex space-x-3 lg:space-x-4 mb-2">
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="flex justify-center items-center font-Inter font-bold text-sm leading-[17px] w-7 lg:w-8 h-7 lg:h-8 bg-black text-white rounded-full"
                   >
                     1
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     className="flex justify-center items-center font-Inter font-bold text-sm leading-[17px] w-7 lg:w-8 h-7 lg:h-8 bg-white text-black rounded-full"
                   >
                     2
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     className="flex justify-center items-center font-Inter font-bold text-sm leading-[17px] w-7 lg:w-8 h-7 lg:h-8 bg-white text-black rounded-full"
                   >
                     3
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     className="flex justify-center items-center font-Inter font-bold text-sm leading-[17px] w-7 lg:w-8 h-7 lg:h-8 bg-white text-black rounded-full"
                   >
-                    ...
-                  </a>
-                  <a
-                    href="#"
+                   4
+                  </Link>
+                  <Link
+                    to="#"
                     className="flex justify-center items-center font-Inter font-bold text-sm leading-[17px] w-7 lg:w-8 h-7 lg:h-8 bg-white text-black rounded-full"
                   >
-                    1
-                  </a>
-                  <a href="#">
-                    <i className="ph-caret-right-bold flex justify-center items-center font-Inter font-bold text-sm leading-[17px] w-7 lg:w-8 h-7 lg:h-8 bg-white text-black rounded-full"></i>
-                  </a>
+                   ...
+                  </Link>
+                  <Link to="#"> 
+                   <span className="flex justify-center items-center font-Inter font-bold  w-7 lg:w-8 h-7 lg:h-8 bg-white text-black rounded-full"> <CaretRight size={18}  /></span>
+                  </Link>
                 </div>
               </div>
 

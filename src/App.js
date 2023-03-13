@@ -7,6 +7,7 @@ import Blog from './pages/Blog';
 
 import About from './pages/About';
 import BlogDetail from './pages/BlogDetail';
+import SignUp from './components/authentication/SignUp';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
    <Route path='/' element={<BasicLayout />}>
    {/* <Route index element={<Home />} /> */}
    <Route path='/' element={<Home />} />
+   <Route path='sign-up' element={<SignUp />} />
    <Route path="/about" element={<About />} />
    <Route path="/blog" element={<Blog />} />
    <Route path="/blog-detail" element={<BlogDetail />} />
