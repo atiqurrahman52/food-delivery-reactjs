@@ -78,8 +78,8 @@ const RelatedProduct = () => {
                           {productName}
                         </p>
                         <p className="font-Playfair font-bold text-xl lg:text-2xl text-success leading-[28px] lg:leading-[34px]">
-                          $4.50
-                          <span className="font-Raleway text-sm lg:text-base leading-[21pxpx] text-primary">
+                          ${price}
+                          <span className="font-Raleway text-sm lg:text-base leading-[21px] text-primary">
                             /kg
                           </span>
                         </p>

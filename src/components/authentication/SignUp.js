@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import signUp from '../../assets/image/auth/sign-up.webp'
+import logo from '../../assets/image/logo/logo.webp'
 const SignUp = () => {
     return (
         <section id="sign-up">
@@ -14,7 +15,7 @@ const SignUp = () => {
         </div>
         <div className="col-span-12 lg:col-span-7">
           <div className="flex justify-center mb-20 pt-6">
-          <a href="../index.html"> <img src="../assets/image/logo/logo.webp" alt="" /></a>
+          <Link to="/"> <img src={logo} alt="" /></Link>
           </div>
        
           <div className="flex flex-col items-center">
@@ -55,7 +56,7 @@ const SignUp = () => {
                <div className="pt-6 md:pt-6">
                 <div className="flex gap-1 mb-12 lg:mb-6 ">
                   <p className="font-Raleway font-medium text-xs lg:text-sm leading-[18px] lg:leading-[21px] text-[#222329]">Already have an account?</p> 
-                  <a  className="font-Raleway font-medium text-xs lg:text-sm leading-[18px] lg:leading-[21px] text-success" href="../pages/sign-in.html">Sign In</a>
+                  <Link  className="font-Raleway font-medium text-xs lg:text-sm leading-[18px] lg:leading-[21px] text-success" to="/sign-in">Sign In</Link>
                 </div>
                     <p className="font-Raleway font-semibold text-sm text-primary/60 border-t w-9 pt-2">Or,</p>
                </div>

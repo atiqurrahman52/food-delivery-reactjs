@@ -12,7 +12,10 @@
   font-weight: normal;
   font-style: normal;
 }
-
+.load_more{
+  background: linear-gradient(125.47deg, #248C80 37.4%, #105C53 85.68%);
+   box-shadow: 0px 20px 24px -4px rgba(0, 0, 0, 0.08), 0px 8px 8px -4px rgba(0, 0, 0, 0.03);
+}
 .sale{
   background: linear-gradient(125.47deg, #248C80 37.4%, #105C53 85.68%);
   box-shadow: 0px 20px 24px -4px rgba(0, 0, 0, 0.08), 0px 8px 8px -4px rgba(0, 0, 0, 0.03);
@@ -23,7 +26,6 @@
     background-size: cover;
   }
   .footer-background {
-    /* background-image: url("./../assets/image/footer/footer.webp"); */
     background-image: url("./assets/image/footer/footer.webp");
   }
    .banner-background {
@@ -32,9 +34,12 @@
   .banner-mobile-background {
     background-image: url("./assets/image/banner/mobile-banner.png");
   }
-  /* .banner-shop {
-    background-image: url("./../assets/image/shop/shop-banner.svg");
-  } */
+  .banner-shop {
+    background-image: url("./assets/image/shop/shop-banner-large.webp");
+  }
+  .banner-shop-mobile{
+    background-image: url("./assets/image/shop/shop-banner-mobile.webp");
+  }
   .subscribe-banner {
     background-image: url("./assets/image/shop/subscribe.webp");
   }
@@ -147,3 +152,14 @@
     left: -40%;
     bottom: -30%;
   }
+
+  .filter-btn.active,
+.filter-btn.active p,
+.filter-btn.active i {
+  @apply text-white bg-success;
+}
+.categories-btn.active,
+.categories-btn.active p,
+.categories-btn.active i {
+  @apply text-white bg-success;
+}
