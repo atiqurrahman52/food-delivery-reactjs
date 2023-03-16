@@ -54,12 +54,11 @@ const Articles = () => {
             
             </div>
             <div className="flex justify-center pt-6 lg:pt-8">
-              <button className="flex items-center gap-2 py-3 px-4 w-[157px] h-[52px] rounded-[48px] bg-[#248C80]">
+              <button className="flex items-center gap-2 py-3 px-4 w-[157px] h-[52px] rounded-[48px] bg-[#248C80] load_more">
                 <p className="font-Raleway font-semibold text-sm lg:text-base leading-[21pxpx] lg:leading-6 text-white">
                   See all Post
                 </p>
                 <span className="bg-white rounded-full w-7 h-7 flex justify-center items-center">
-                  {/* <i className="ph-caret-right-bold text-success"></i> */}
                   <CaretRight size={20} className='text-success' />
                 </span>
               </button>

@@ -2,7 +2,7 @@ import React from "react";
 
 const BlogBanner = () => {
   return (
-    <section id="blog-banner">
+    <div>
       <div className="blog-banner bg-center bg-cover bg-no-repeat h-[300px] md:block hidden">
         <div className="container">
           <div className="pt-10">
@@ -58,7 +58,7 @@ const BlogBanner = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

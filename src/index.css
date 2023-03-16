@@ -52,12 +52,12 @@
   .about-banner-mobile {
     background-image: url("./assets/image/about/about-banner-mobile.webp");
   }
-  /* .recipes-banner {
-    background-image: url("./../assets/image/recipes/recipes-banner.webp");
-  } */
-  /* .recipes-mobile-banner {
-    background-image: url("./../assets/image/recipes/recipes-mobile-banner.webp");
-  } */
+  .recipes-banner {
+    background-image: url("./assets/image/recipes/recipes-banner.webp");
+  }
+  .recipes-mobile-banner {
+    background-image: url("./assets/image/recipes/recipes-mobile-banner.webp");
+  }
   .blog-banner {
     background-image: url("./assets/image/blog/blog-banner.webp");
   }
@@ -153,7 +153,7 @@
     bottom: -30%;
   }
 
-  .filter-btn.active,
+.filter-btn.active,
 .filter-btn.active p,
 .filter-btn.active i {
   @apply text-white bg-success;
@@ -163,3 +163,88 @@
 .categories-btn.active i {
   @apply text-white bg-success;
 }
+
+
+
+/* step stared  */
+.show{
+  display: block;
+}
+
+/* .step0.active{
+  color: red;
+} */
+.progressbar{
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+.progressbar li{
+  position: relative;
+  width: 33.33%;
+  flex-shrink: 0;
+}
+
+.progressbar li.current{
+  color: #004738;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+}
+.progressbar li:not(:first-child):after{
+  content: '';
+  height: 2px;
+  width: 100%;
+  /* background: #000; */
+  background: #E5E8EB;
+  position: absolute;
+  top: 18px;
+  right: 50%;
+}
+
+.progressbar li.current:after{
+  /* background: red; */
+  background: #004738;
+}
+.progressbar li i{
+  display: none;
+}
+.progressbar li .icon{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  background: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+.progressbar li.active i {
+  display: block;
+}
+.progressbar li .icon:after{
+  content: '';
+  height: 8px;
+  width: 8px;
+  /* background: #000; */
+  background: #919EAB;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.progressbar li.active .icon:after{
+  display: none;
+ 
+}
+/* step end  */

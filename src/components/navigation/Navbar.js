@@ -1,12 +1,19 @@
+import { X } from "@phosphor-icons/react";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import logo from "../../assets/image/logo/logo.webp";
 import { navBarData } from "../../data/navigation/navBarData";
+import { cartData } from "../../data/sharedData/cartData";
+import SearchModal from "../shared/SearchModal";
 
 const Navbar = () => {
     const [menu , setMenu] = useState(false)
+    const [isModalVisible, setIsModalVisible] = useState(false);
+    const [cart, setCart] = useState(false)
   return (
+
+   <>
     <header
       id="navbar"
       className="sticky top-0 z-50 w-full navbar backdrop-blur-[2px]"
@@ -36,8 +43,11 @@ const Navbar = () => {
           </div>
 
           <ul className="hidden md:flex items-center gap-6">
-            <li className="">
-              <button type="" className="search">
+            <li
+             className="">
+              <button 
+               onClick={() => setIsModalVisible(true)}
+               type="" className="search">
                 <svg
                   width="32"
                   height="32"
@@ -110,7 +120,9 @@ const Navbar = () => {
             </li>
 
             <li id="cart-button" className="relative">
-              <button type="">
+              <button
+              onClick={() => setCart(!cart)}
+               type="">
                 <svg
                   width="32"
                   height="32"
@@ -144,128 +156,79 @@ const Navbar = () => {
                 2
               </p>
 
+             {
+              cart &&
               <div
-                id="cart-menu"
-                className="hidden absolute z-50 top-full right-0 pt-10"
-              >
-                <div className="relative bg-[#F9F6F1] max-w-[425px] h-[564px] shadow-[0_24px_48px_-12px_rgba(0,0,0,0.18)] rounded-lg p-4 lg:p-6">
-                  <p className="font-Playfair font-bold text-base lg:text-xl text-primary mb-4 pt-5">
-                    Your Cart
+              id="cart-menu"
+              className="absolute z-50 top-full right-0 pt-10"
+            >
+              <div className="relative bg-[#F9F6F1] max-w-[425px] h-[564px] shadow-[0_24px_48px_-12px_rgba(0,0,0,0.18)] rounded-lg p-4 lg:p-6">
+                <p className="font-Playfair font-bold text-base lg:text-xl text-primary mb-4 pt-5">
+                  Your Cart 
+                </p>
+
+                <div className="">
+                  {
+                    cartData.map(({id,img,productName,price}) =>(
+                      <div key={id}
+                       className="flex justify-between items-start py-3 border-b border-[#E5E2DE]">
+                      <div className="flex gap-3">
+                        <div className="w-12 h-12">
+                          <img src={img} alt="" />
+                        </div>
+                        <div className="space-y-1">
+                          <p className="font-Raleway font-bold text-sm text-primary">
+                           {productName}
+                          </p>
+                          <p className="font-Raleway font-medium text-sm text-primary opacity-60">
+                            ${price}
+                          </p>
+                        </div>
+                      </div>
+                      <button> 
+                        <X size={20} />
+                      </button>
+                    </div>
+                    ))
+                  }
+
+                </div>
+                <div className="flex justify-between py-3">
+                  <p className="font-Raleway font-bold text-sm text-primary">
+                    Subtotal :
                   </p>
+                  <p className="font-Raleway font-semibold text-sm text-primary opacity-60">
+                    $115.66
+                  </p>
+                </div>
 
-                  <div className="">
-                    <div className="flex justify-between items-start py-3 border-b border-[#E5E2DE]">
-                      <div className="flex gap-3">
-                        <div className="w-12 h-12">
-                          <img src="../assets/image/food/food-8.webp" alt="" />
-                        </div>
-                        <div className="space-y-1">
-                          <p className="font-Raleway font-bold text-sm text-primary">
-                            Best Fresh Tasting <br />
-                            Avocado
-                          </p>
-                          <p className="font-Raleway font-medium text-sm text-primary opacity-60">
-                            $15.66
-                          </p>
-                        </div>
-                      </div>
-                      <button type="">
-                        <i className="ph-x"></i>
-                      </button>
-                    </div>
-
-                    <div className="flex justify-between items-start py-3 border-b border-[#E5E2DE]">
-                      <div className="flex gap-3">
-                        <div className="w-12 h-12">
-                          <img src="../assets/image/food/food-6.webp" alt="" />
-                        </div>
-                        <div className="space-y-1">
-                          <p className="font-Raleway font-bold text-sm text-primary">
-                            Best Fresh Tasting <br />
-                            Avocado
-                          </p>
-                          <p className="font-Raleway font-medium text-sm text-primary opacity-60">
-                            $15.66
-                          </p>
-                        </div>
-                      </div>
-                      <button type="">
-                        <i className="ph-x"></i>
-                      </button>
-                    </div>
-
-                    <div className="flex justify-between items-start py-3 border-b border-[#E5E2DE]">
-                      <div className="flex gap-3">
-                        <div className="w-12 h-12">
-                          <img src="../assets/image/food/food-3.webp" alt="" />
-                        </div>
-                        <div className="space-y-1">
-                          <p className="font-Raleway font-bold text-sm text-primary">
-                            Best Fresh Tasting <br />
-                            Avocado
-                          </p>
-                          <p className="font-Raleway font-medium text-sm text-primary opacity-60">
-                            $15.66
-                          </p>
-                        </div>
-                      </div>
-                      <button type="">
-                        <i className="ph-x"></i>
-                      </button>
-                    </div>
-
-                    <div className="flex justify-between items-start py-3 border-b border-[#E5E2DE]">
-                      <div className="flex gap-3">
-                        <div className="w-12 h-12">
-                          <img src="../assets/image/food/food-1.webp" alt="" />
-                        </div>
-                        <div className="space-y-1">
-                          <p className="font-Raleway font-bold text-sm text-primary">
-                            Best Fresh Tasting <br />
-                            Avocado
-                          </p>
-                          <p className="font-Raleway font-medium text-sm text-primary opacity-60">
-                            $15.66
-                          </p>
-                        </div>
-                      </div>
-                      <button type="">
-                        <i className="ph-x"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <div className="flex justify-between py-3">
-                    <p className="font-Raleway font-bold text-sm text-primary">
-                      Subtotal :
-                    </p>
-                    <p className="font-Raleway font-semibold text-sm text-primary opacity-60">
-                      $115.66
-                    </p>
-                  </div>
-
-                  <div className="flex space-x-2 pt-4">
-                    <button
-                      type=""
-                      className="font-Raleway font-semibold text-sm text-primary w-[126px] lg:w-[184px] h-[45px] bg-primary/12 border border-[#E1E1E1]"
-                    >
-                      <a href="./pages/cart.html">VIEW CART</a>
-                    </button>
-                    <button
-                      type=""
-                      className="font-Raleway font-semibold text-sm text-white w-[126px] lg:w-[184px] h-[45px] bg-success"
-                    >
-                      <a href="./pages/cart.html">CHECKOUT</a>
-                    </button>
-                  </div>
+                <div className="flex space-x-2 pt-4">
                   <button
-                    id="cart-close-button"
                     type=""
-                    className="absolute top-3 right-6 w-6 h-6 bg-yellow rounded-full text-white flex justify-center items-center"
+                    className="font-Raleway font-semibold text-sm text-primary w-[126px] lg:w-[184px] h-[45px] bg-primary/12 border border-[#E1E1E1]"
                   >
-                    <i className="ph-x"></i>
+                    <Link to="/checkout">VIEW CART</Link>
+                  </button>
+                  <button
+                    type=""
+                    className="font-Raleway font-semibold text-sm text-white w-[126px] lg:w-[184px] h-[45px] bg-success"
+                  >
+                    <Link to="/checkout">CHECKOUT</Link>
                   </button>
                 </div>
+                <button
+                  onClick={() => setCart(false)}
+                  id="cart-close-button"
+                  type=""
+                  className="absolute top-3 right-6 w-6 h-6 bg-yellow rounded-full text-white flex justify-center items-center"
+                >
+                  
+                  <X size={24} />
+                </button>
               </div>
+            </div>
+             }
+
             </li>
           </ul>
         </nav>
@@ -478,10 +441,10 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div
-          onClick={() => setMenu(false)}
+       {
+          menu && <div
             id="menu"
-            className="fixed z-50 top-0 left-0 flex items-center justify-center w-full h-screen hidden"
+            className="fixed z-50 top-0 left-0 flex items-center justify-center w-full h-screen"
           >
             <div className="relative bg-white rounded-lg w-[265px] h-[350px] pt-6">
               <div className="text-center mb-10">
@@ -508,7 +471,9 @@ const Navbar = () => {
                   </li>
                 </ul>
               </div>
-              <button id="close-button" className="absolute -top-4 -right-4">
+              <button
+              onClick={() => setMenu(false)}
+               id="close-button" className="absolute -top-4 -right-4">
                 <svg
                   width="36"
                   height="36"
@@ -535,10 +500,16 @@ const Navbar = () => {
               </button>
             </div>
           </div>
+      }
           {/* <!-- Mobile screen end --> */}
         </nav>
       </div>
     </header>
+
+    {isModalVisible && <SearchModal setIsModalVisible ={setIsModalVisible} />}
+   </>
+
+   
   );
 };
 

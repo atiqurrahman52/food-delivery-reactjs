@@ -5,6 +5,7 @@ import { productData } from "../../data/sharedData/productData";
 
 const Product = () => {
   const [filter, setFilter] = useState(false);
+  const [categories, setCategories] = useState(false);
   return (
     <div className="bg-[#F3F4EF]">
       <div className="container">
@@ -64,14 +65,17 @@ const Product = () => {
               </div>
 
               <div className="relative">
-                <button className="categories-btn flex justify-center items-center gap-2 border-[1.5px] border-success rounded p-2">
-                  <CirclesThreePlus size={24} className="text-success" />
+                <button
+                 onClick={() => setCategories(!categories)}
+                 className={`${categories && "active"} categories-btn flex justify-center items-center gap-2 border-[1.5px] border-success rounded p-2`}>
+                  <CirclesThreePlus size={24} className={`${categories ? "text-white": "text-success"}`} />
                   <p className="font-Raleway font-semibold text-sm leading-[21px] text-success">
                     Categories
                   </p>
                 </button>
 
-                <div className="categories-dropdown hidden absolute pt-[14px] lg:pt-[15px] -right-[35px] md:right-0 z-10">
+                <div className={`categories-dropdown ${ categories ? "opacity-100 visible": "opacity-0 invisible"} transition-all absolute pt-[14px] lg:pt-[15px] -right-[35px] md:right-0 z-10`}>
+               
                   <div className="bg-[#F9F6F1] shadow-[0_24px_48px_-12px_rgba(0,0,0,0.18)] p-4 w-[261px] h-auto right-0 rounded-lg">
                     <p className="font-Playfair font-bold text-base lg:text-xl leading-6 lg:leading-[30px] mb-4">
                       Product Categories
