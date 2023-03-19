@@ -1,6 +1,5 @@
 import React from "react";
-// import Swiper, { Autoplay, Navigation, Pagination } from "swiper";
-// import { SwiperSlide } from "swiper/react";
+
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper";
@@ -12,18 +11,18 @@ const RelatedProduct = () => {
     <div className="bg-[#F9F6F1]">
       <div className="container">
         <div className="py-10 lg:py-20">
-          <div className="flex flex-col items-center">
-            <h3 className="font-edwardian text-[32px] lg:text-[80px] leading-[38px] text-primary opacity-[0.2]">
+          {/* <div className="flex flex-col items-center"> */}
+            {/* <h3 className="font-edwardian text-[32px] lg:text-[80px] leading-[38px] text-primary opacity-[0.2]">
               Popular
-            </h3>
-            <h3 className="font-Playfair font-bold text-2xl lg:text-5xl leading-[29px] lg:leading-[58px] text-primary mb-2">
+            </h3> */}
+            <h3 className="font-Playfair font-bold text-2xl  leading-[29px] lg:leading-[58px] text-primary mb-2">
               Related Products
             </h3>
-            <p className="font-Raleway font-medium text-sm leading-[21pxpx] text-primary/60">
+            {/* <p className="font-Raleway font-medium text-sm leading-[21pxpx] text-primary/60">
               Lorem ipsum dolor sit amet consectetur. i psum Lorem dolor sit
               amet consectetur.
-            </p>
-          </div>
+            </p> */}
+          {/* </div> */}
 
           <div className="relative">
             <Swiper
@@ -101,6 +100,7 @@ const RelatedProduct = () => {
 
             <div className="swiper-pagination relatedProductRecipesPage"></div>
           </div>
+
         </div>
       </div>
     </div>
