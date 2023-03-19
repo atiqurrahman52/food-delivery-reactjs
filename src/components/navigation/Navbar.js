@@ -11,6 +11,7 @@ const Navbar = () => {
     const [menu , setMenu] = useState(false)
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [cart, setCart] = useState(false)
+    const [cartMobile, setMobileCart] = useState(false)
   return (
 
    <>
@@ -249,7 +250,7 @@ const Navbar = () => {
             <div className="flex gap-2.5 items-center">
               <div id="mob-cart-button" className="relative md:hidden block">
                 <button
-                onClick={() => setCart(!cart)}
+                onClick={() => setMobileCart(!cart)}
                 >
                   <svg
                     width="20"
@@ -286,7 +287,7 @@ const Navbar = () => {
               </div>
               {/* Cart List started  */}
              {
-              cart &&
+              cartMobile &&
               <div
               id="mob-cart-menu"
               className="absolute z-50 top-7 left-0 right-0 pt-10 mx-2"
@@ -348,7 +349,7 @@ const Navbar = () => {
                   </button>
                 </div>
                 <button
-                 onClick={() => setCart(false)}
+                 onClick={() => setMobileCart(false)}
                   id="mob-cart-close-button"
                   type=""
                   className="absolute top-3 right-6 w-6 h-6 bg-yellow rounded-full text-white flex justify-center items-center"
