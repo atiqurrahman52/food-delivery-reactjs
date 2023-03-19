@@ -13,6 +13,9 @@ import ForgetPassword from './components/authentication/ForgetPassword';
 import Shop from './pages/Shop';
 import Recipes from './pages/Recipes';
 import Checkout from './pages/Checkout';
+import Profile from './pages/Profile';
+import BillingAddress from './pages/BillingAddress';
+import PaymentOptions from './pages/PaymentOptions';
 
 function App() {
   return (
@@ -29,6 +32,10 @@ function App() {
    <Route path="/recipes" element={<Recipes />} />
    <Route path="/blog-detail" element={<BlogDetail />} />
    <Route path="/checkout" element={<Checkout />} />
+   <Route path="/profile" element={<Profile />} />
+   <Route path="/billing-address" element={<BillingAddress />} />
+   <Route path="/payment-options" element={<PaymentOptions />} />
+
 
 
    </Route>

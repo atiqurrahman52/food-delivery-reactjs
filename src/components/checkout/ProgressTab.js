@@ -19,7 +19,7 @@ const ProgressTab = ({ currentStep }) => {
 
   return (
     <div className="pb-20">
-      <div className="container checkout-step">
+      <div className="container checkout-step max-w-[800px]">
         <ProgressBar percent={stepPercentage}>
           {["Shopping Cart", "Checkout", "Payment"].map((item, i) => {
             return (
@@ -37,7 +37,7 @@ const ProgressTab = ({ currentStep }) => {
                         </span>
                       ) : (
                         <span className="h-10 w-10 flex items-center justify-center mx-auto">
-                          <span className="block h-2 w-2 rounded-full bg-red-500" />
+                          <span className="block h-2 w-2 rounded-full bg-[#919EAB]" />
                         </span>
                       )}
                     </span>
