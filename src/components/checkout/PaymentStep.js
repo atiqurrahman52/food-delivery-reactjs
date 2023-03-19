@@ -8,7 +8,7 @@ const PaymentStep = ({ currentStep, handlePrev, handleSubmit }) => {
   }
 
   return (
-    <section id="payment" className="hidde card2">
+    <section>
       <div className="container">
         <div className="grid grid-cols-12 gap-3 lg:gap-4">
           <div className="col-span-12 lg:col-span-8">

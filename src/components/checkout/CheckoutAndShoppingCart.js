@@ -12,16 +12,13 @@ const CheckoutAndShoppingCart = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // toast.success("Payment Completed");
   };
 
   const next = () => {
     setCurrentStep(currentStep >= 2 ? 3 : currentStep + 1);
-    // scrollToTop();
   };
   const prev = () => {
     setCurrentStep(currentStep <= 1 ? 1 : currentStep - 1);
-    // scrollToTop();
   };
 
   return (
