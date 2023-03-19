@@ -7,6 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+// import "react-step-progress-bar/styles.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
