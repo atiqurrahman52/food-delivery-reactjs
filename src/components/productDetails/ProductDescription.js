@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper";
 import { Link } from "react-router-dom";
 import { productDescriptionData } from "../../data/productDetails/ProductDescriptionData";
+import { CaretRight } from "@phosphor-icons/react";
 
 const ProductDescription = () => {
   return (
@@ -15,6 +16,7 @@ const ProductDescription = () => {
                 Shop
               </p>
               <i className="ph-caret-right-bold text-xl text-primary"></i>
+              <CaretRight size={20} />
               <p className="font-Raleway font-semibold text-sm leading-[21px] text-primary">
                 Baby Potato
               </p>
@@ -76,56 +78,7 @@ const ProductDescription = () => {
                   <div className="swiper-pagination relatedProductRecipesPage"></div>
                 </div>
 
-                <div className="relative">
-                  <div className="swiper babyPotato">
-                    <div className="swiper-wrapper">
-                      <div className="swiper-slide flex justify-center items-center">
-                        <img
-                          src="../assets/image/product-details/potato.webp"
-                          alt=""
-                        />
-                      </div>
-
-                      {/* <div
-                          className="swiper-slide flex justify-center items-center"
-                        >
-                          <img
-                            src="../assets/image/product-details/potato.webp"
-                            alt=""
-                          />
-                        </div>
-  
-                        <div
-                          className="swiper-slide flex justify-center items-center"
-                        >
-                          <img
-                            src="../assets/image/product-details/potato.webp"
-                            alt=""
-                          />
-                        </div>
-
-                        <div
-                          className="swiper-slide flex justify-center items-center"
-                        >
-                          <img
-                            src="../assets/image/product-details/potato.webp"
-                            alt=""
-                          />
-                        </div>
-
-                        <div
-                          className="swiper-slide flex justify-center items-center"
-                        >
-                          <img
-                            src="../assets/image/product-details/potato.webp"
-                            alt=""
-                          />
-                        </div> */}
-                    </div>
-                  </div>
-
-                  <div className="swiper-pagination babyPotatoPage"></div>
-                </div>
+             
               </div>
 
               <div className="col-span-12 lg:col-span-5">

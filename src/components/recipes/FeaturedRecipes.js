@@ -16,7 +16,7 @@ const FeaturedRecipes = () => {
                   <h3 className="font-Raleway font-bold text-base leading-6 text-primary mb-6">
                     Featured Recipes
                   </h3>
-                  <a href="../pages/recipes-detail.html">
+                  <Link to="/recipes-details">
                     <div className="mb-4 lg:mb-6">
                       <img src={featuredRecipes} alt="" />
                     </div>
@@ -45,7 +45,7 @@ const FeaturedRecipes = () => {
 
                       <ArrowUpRight size={24} className="text-primary" />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-span-12 lg:col-span-5">
@@ -56,7 +56,7 @@ const FeaturedRecipes = () => {
                 </div>
                       {
                         recipesPostData.map(({id,img,time,title}) =>(
-                            <Link to="#" key={id}>
+                            <Link to="/recipes-details" key={id}>
                   <div className="flex items-center space-x-3 lg:space-x-4 border border-[#DBDCD8] mb-4 lg:mb-6">
                     <div className="">
                       <img

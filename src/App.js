@@ -17,6 +17,7 @@ import Profile from './pages/Profile';
 import BillingAddress from './pages/BillingAddress';
 import PaymentOptions from './pages/PaymentOptions';
 import ProductDetails from './pages/ProductDetails';
+import RecipesDetails from './pages/RecipesDetails';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
    <Route path="/billing-address" element={<BillingAddress />} />
    <Route path="/payment-options" element={<PaymentOptions />} />
    <Route path="/product-details" element={<ProductDetails />} />
+   <Route path="/recipes-details" element={<RecipesDetails />} />
 
 
 
