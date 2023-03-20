@@ -16,7 +16,6 @@ const BlogBanner = () => {
               <input
                 type=""
                 name=""
-                value=""
                 className="w-full h-[56px] px-3 outline-none text-xs lg:text-sm"
                 placeholder="Search article, news or recipe..."
               />
@@ -44,7 +43,7 @@ const BlogBanner = () => {
               <input
                 type=""
                 name=""
-                value=""
+            
                 className="w-full h-[56px] px-3 outline-none text-xs lg:text-sm"
                 placeholder="Search article, news or recipe..."
               />

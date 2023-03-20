@@ -21,7 +21,6 @@ const Newsletter = () => {
                 <input
                   type=""
                   name=""
-                  value=""
                   className="w-full h-[60px] px-3 outline-none"
                   placeholder="Your email address..."
                 />
