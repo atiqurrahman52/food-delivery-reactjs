@@ -24,7 +24,7 @@ const BillingAddress = () => {
                   </p>
                 </div>
                 <ul className="space-y-4">
-                  <li className="px-8">
+                  <li className="px-8 text-[#016A78]">
                     <Link
                       to="/profile"
                       className="flex items-center gap-1 lg:gap-2.5"
@@ -36,7 +36,7 @@ const BillingAddress = () => {
                       </p>
                     </Link>
                   </li>
-                  <li className="px-8 text-[#004738] activeProfile">
+                  <li className="px-8 text-[#016A78] activeProfile">
                     <Link
                       to="/billing-address"
                       className="flex items-center gap-1 lg:gap-2.5"
@@ -48,7 +48,7 @@ const BillingAddress = () => {
                       </p>
                     </Link>
                   </li>
-                  <li className="px-8">
+                  <li className="px-8 text-[#016A78]">
                     <Link
                       to="/payment-options"
                       className="flex items-center gap-1 lg:gap-2.5"

@@ -12,7 +12,7 @@ const Recipes = () => {
             <FeaturedRecipes />
             <FeaturedPostRecipes />
             <RelatedProduct />
-           <Newsletter />
+            <Newsletter />
         </div>
     );
 };

@@ -4,7 +4,6 @@ import BasicLayout from './layout/BasicLayout';
 // import Blog from './components/blog/Blog';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
-
 import About from './pages/About';
 import BlogDetail from './pages/BlogDetail';
 import SignUp from './components/authentication/SignUp';

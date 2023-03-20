@@ -27,37 +27,37 @@ const PaymentOptions = () => {
                 {/* <!-- <ul className="space-y-4 overflow-x-auto border"> --> */}
                 {/* <!-- <ul className="flex flex-row lg:flex-col items-center lg:items-start justify-start lg:space-y-7  space-x-2 overflow-x-auto lg:overflow-x-hidden overflow-y-clip whitespace-nowrap py-3"> --> */}
                 <ul className="flex flex-row md:flex-col items-center lg:items-start justify-start space-y-4 overflow-x-auto md:overflow-x-hidden overflow-y-clip whitespace-nowrap py-3">
-                  <li className="px-8">
+                  <li className="px-8 text-[#016A78]">
                     <Link
                       to="/profile"
                       className="flex items-center gap-1 lg:gap-2.5"
                     >
-                      {/* <i className="ph-user text-[#016A78] text-lg"></i> */}
-                      <User size={24} className="text-[#004738]" />
+                     
+                      <User size={24} className="" />
                       <p className="font-Overpass font-semibold text-sm leading-[21px] text-[#016A78]">
                         Profile
                       </p>
                     </Link>
                   </li>
-                  <li className="px-8">
+                  <li className="px-8 text-[#016A78]">
                     <Link
                       to="/billing-address"
                       className="flex items-center gap-1 lg:gap-2.5"
                     >
-                      {/* <i className="ph-map-pin text-[#016A78] text-lg"></i> */}
-                      <MapPin size={24} className="text-[#004738]" />
+                      
+                      <MapPin size={24} className="" />
                       <p className="font-Overpass font-semibold text-sm leading-[21px] text-[#016A78]">
                         Billing Address
                       </p>
                     </Link>
                   </li>
-                  <li className="px-8 text-[#004738] activeProfile">
+                  <li className="px-8 text-[#016A78] activeProfile">
                     <Link
                       to="/payment-options"
                       className="flex items-center gap-1 lg:gap-2.5"
                     >
-                      {/* <i className="ph-cardholder text-lg"></i> */}
-                      <Cardholder size={24} className="text-[#004738]" />
+                     
+                      <Cardholder size={24} className="" />
                       <p className="font-Overpass font-semibold text-sm leading-[21px]">
                         Payment Options
                       </p>

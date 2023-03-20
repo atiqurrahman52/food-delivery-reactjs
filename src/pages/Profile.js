@@ -37,7 +37,7 @@ const Profile = () => {
                       </p>
                     </Link>
                   </li>
-                  <li className="px-8">
+                  <li className="px-8 text-[#016A78]">
                     <Link
                       to="/billing-address"
                       className="flex items-center gap-1 lg:gap-2.5"
@@ -49,7 +49,7 @@ const Profile = () => {
                       </p>
                     </Link>
                   </li>
-                  <li className="px-8">
+                  <li className="px-8 text-[#016A78]">
                     <Link
                       to="/payment-options"
                       className="flex items-center gap-1 lg:gap-2.5"
