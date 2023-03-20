@@ -1,38 +1,38 @@
 import React from "react";
-import blog_banner from '../../assets/image/blog-detail/blog-detail-1.webp'
+import blog_banner from "../../assets/image/blog-detail/blog-detail-1.webp";
 
-import user from '../../assets/image/recipes-detail/user.webp'
+import user from "../../assets/image/recipes-detail/user.webp";
 
 const BlogDetailsBanner = () => {
   return (
     <section id="blog-banner">
-      <div class="bg-[#F9F6F1]">
-        <div class="py-4 lg:py-8">
-          <div class="container">
-            <h3 class="font-Playfair font-bold text-2xl lg:text-5xl leading-[29px] lg:leading-[58px] mb-8 lg:mb-12">
+      <div className="bg-[#F9F6F1]">
+        <div className="py-4 lg:py-8">
+          <div className="container">
+            <h3 className="font-Playfair font-bold text-2xl lg:text-5xl leading-[29px] lg:leading-[58px] mb-8 lg:mb-12">
               Blog title heading will go here
             </h3>
-            <div class="flex justify-between flex-col md:flex-row gap-[14px]">
-              <div class="flex space-x-3 lg:space-x-4">
+            <div className="flex justify-between flex-col md:flex-row gap-[14px]">
+              <div className="flex space-x-3 lg:space-x-4">
                 <div>
                   <img src={user} alt="" />
                 </div>
                 <div>
-                  <p class="font-Raleway font-semibold text-sm lg:text-base leading-6 text-primary">
+                  <p className="font-Raleway font-semibold text-sm lg:text-base leading-6 text-primary">
                     Arlene McCoy
                   </p>
-                  <div class="flex items-center space-x-2">
-                    <p class="font-Raleway font-medium text-xs lg:text-sm leading-[18px] lg:leading-[21px] text-black">
+                  <div className="flex items-center space-x-2">
+                    <p className="font-Raleway font-medium text-xs lg:text-sm leading-[18px] lg:leading-[21px] text-black">
                       11 Jan 2022 .
                     </p>
 
-                    <p class="font-Raleway font-medium text-xs lg:text-sm leading-[18px] lg:leading-[21px] text-black">
+                    <p className="font-Raleway font-medium text-xs lg:text-sm leading-[18px] lg:leading-[21px] text-black">
                       5 min read
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="flex space-x-2">
+              <div className="flex space-x-2">
                 <a href="#">
                   <svg
                     width="24"
@@ -96,8 +96,8 @@ const BlogDetailsBanner = () => {
               </div>
             </div>
 
-            <div class="pt-8">
-              <img src={blog_banner} alt=""/>
+            <div className="pt-8">
+              <img src={blog_banner} alt="" />
             </div>
           </div>
         </div>

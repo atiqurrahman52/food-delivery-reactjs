@@ -31,16 +31,14 @@ function App() {
    <Route path="/about" element={<About />} />
    <Route path="/blog" element={<Blog />} />
    <Route path="/shop" element={<Shop />} />
-   <Route path="/recipes" element={<Recipes />} />
    <Route path="/blog-detail" element={<BlogDetail />} />
    <Route path="/checkout" element={<Checkout />} />
    <Route path="/profile" element={<Profile />} />
    <Route path="/billing-address" element={<BillingAddress />} />
    <Route path="/payment-options" element={<PaymentOptions />} />
    <Route path="/product-details" element={<ProductDetails />} />
-   <Route path="/recipes-details" element={<RecipesDetails />} />
-
-
+   <Route path="/recipes" element={<Recipes />} />
+   <Route path="/recipes-details/:id" element={<RecipesDetails />} />
 
    </Route>
      

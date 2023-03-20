@@ -16,7 +16,7 @@ const RecipesBanner = () => {
         </div>
       </div>
 
-      {/* <!-- For mobile banner  --> */}
+   {/* For mobile banner  */}
 
       <div className="recipes-mobile-banner bg-cover bg-center bg-no-repeat h-[300px] md:hidden block">
         <div className="container">

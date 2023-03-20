@@ -1,15 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import recipes from "../../assets/image/recipes-detail/recipes-detail-1.webp";
 import user from "../../assets/image/recipes-detail/user.webp";
 
-const RecipesDetailsBanner = () => {
+const RecipesDetailsBanner = ({singleRecipe}) => {
+  const {title} = singleRecipe;
   return (
-    <section id="recipes-banner">
+    <div>
       <div className="bg-[#F9F6F1]">
         <div className="py-4 lg:py-8">
           <div className="container">
             <h3 className="font-Playfair font-bold text-2xl lg:text-5xl leading-[29px] lg:leading-[58px] mb-8 lg:mb-12">
-              Connecting with Food Lovers Everywhere
+              {title}
             </h3>
             <div className="flex justify-between flex-col md:flex-row gap-[14px]">
               <div className="flex space-x-3 lg:space-x-4">
@@ -32,7 +34,7 @@ const RecipesDetailsBanner = () => {
                 </div>
               </div>
               <div className="flex space-x-2">
-                <a href="#">
+                <Link to="#">
                   <svg
                     width="24"
                     height="25"
@@ -47,8 +49,8 @@ const RecipesDetailsBanner = () => {
                       fill="#004738"
                     />
                   </svg>
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="#">
                   <svg
                     width="24"
                     height="25"
@@ -63,8 +65,8 @@ const RecipesDetailsBanner = () => {
                       fill="#2231BC"
                     />
                   </svg>
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="#">
                   <svg
                     width="24"
                     height="25"
@@ -77,8 +79,8 @@ const RecipesDetailsBanner = () => {
                       fill="#1DA1F2"
                     />
                   </svg>
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="#">
                   <svg
                     width="24"
                     height="25"
@@ -91,7 +93,7 @@ const RecipesDetailsBanner = () => {
                       fill="#2058CD"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -100,7 +102,7 @@ const RecipesDetailsBanner = () => {
       <div>
         <img src={recipes} alt="" />
       </div>
-    </section>
+    </div>
   );
 };
 

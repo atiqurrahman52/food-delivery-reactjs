@@ -1,4 +1,4 @@
-import { Cardholder, MapPin, User } from "@phosphor-icons/react";
+import { Cardholder, EyeSlash, MapPin, User } from "@phosphor-icons/react";
 import React from "react";
 import { Link } from "react-router-dom";
 import user from "../assets/image/profile/user.webp";
@@ -137,7 +137,8 @@ const Profile = () => {
                   </label>
                   <div for="" className="relative">
                     <span className="absolute top-1/2 -translate-y-1/2 right-2 py-3 cursor-pointer">
-                      <i className="ph-eye-slash"></i>
+    
+                      <EyeSlash size={18} />
                     </span>
 
                     <input
