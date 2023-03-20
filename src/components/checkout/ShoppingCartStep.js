@@ -1,5 +1,5 @@
-import { CaretLeft } from "@phosphor-icons/react";
-
+import { CaretLeft, X } from "@phosphor-icons/react";
+import food1 from '../../assets/image/food/food-3.webp'
 import BillingSidebar from "./BillingSidebar";
 
 const ShoppingCartStep = ({ currentStep, handleNext }) => {
@@ -38,12 +38,12 @@ const ShoppingCartStep = ({ currentStep, handleNext }) => {
                 <div className="md:w-1/2">
                   <div className="flex flex-col lg:flex-row lg:items-center gap-5">
                     <div className="w-full lg:w-[76px] h-full lg:h-[76px] bg-[#FFEEDC]">
-                      <img src="../assets/image/food/food-3.webp" alt="" />
+                      <img src={food1} alt="" />
                     </div>
 
                     <div className="">
                       <p className="font-Playfair font-bold text-base lg:text-xl leading-[30px] text-primary mb-1">
-                        Baby Carrots 1
+                        Baby Carrots 
                       </p>
                       <p className="font-Raleway font-medium text-sm leading-[21px] text-primary/60">
                         4 kg
@@ -67,8 +67,7 @@ const ShoppingCartStep = ({ currentStep, handleNext }) => {
                     <p className="font-Raleway font-bold text-base leading-[18px] text-success">
                       $ 1,750
                     </p>
-
-                    <i className="ph-x text-2xl text-[#9C9C9C] absolute lg:static -top-2.5 right-0"></i>
+                    <span className=" text-[#9C9C9C] absolute lg:static -top-2.5 right-0"> <X size={24} /></span>
                   </div>
                 </div>
               </div>
@@ -77,12 +76,12 @@ const ShoppingCartStep = ({ currentStep, handleNext }) => {
                 <div className="md:w-1/2">
                   <div className="flex flex-col lg:flex-row lg:items-center gap-5">
                     <div className="w-full lg:w-[76px] h-full lg:h-[76px] bg-[#FFEEDC]">
-                      <img src="../assets/image/food/food-3.webp" alt="" />
+                      <img src={food1} alt="" />
                     </div>
 
                     <div className="">
                       <p className="font-Playfair font-bold text-base lg:text-xl leading-[30px] text-primary mb-1">
-                        Baby Carrots 1
+                        Baby Carrots 
                       </p>
                       <p className="font-Raleway font-medium text-sm leading-[21px] text-primary/60">
                         4 kg
@@ -107,7 +106,7 @@ const ShoppingCartStep = ({ currentStep, handleNext }) => {
                       $ 1,750
                     </p>
 
-                    <i className="ph-x text-2xl text-[#9C9C9C] absolute lg:static -top-2.5 right-0"></i>
+                    <span className=" text-[#9C9C9C] absolute lg:static -top-2.5 right-0"> <X size={24} /></span>
                   </div>
                 </div>
               </div>
@@ -116,12 +115,12 @@ const ShoppingCartStep = ({ currentStep, handleNext }) => {
                 <div className="md:w-1/2">
                   <div className="flex flex-col lg:flex-row lg:items-center gap-5">
                     <div className="w-full lg:w-[76px] h-full lg:h-[76px] bg-[#FFEEDC]">
-                      <img src="../assets/image/food/food-3.webp" alt="" />
+                      <img src={food1} alt="" />
                     </div>
 
                     <div className="">
                       <p className="font-Playfair font-bold text-base lg:text-xl leading-[30px] text-primary mb-1">
-                        Baby Carrots 1
+                        Baby Carrots 
                       </p>
                       <p className="font-Raleway font-medium text-sm leading-[21px] text-primary/60">
                         4 kg
@@ -146,7 +145,7 @@ const ShoppingCartStep = ({ currentStep, handleNext }) => {
                       $ 1,750
                     </p>
 
-                    <i className="ph-x text-2xl text-[#9C9C9C] absolute lg:static -top-2.5 right-0"></i>
+                    <span className=" text-[#9C9C9C] absolute lg:static -top-2.5 right-0"> <X size={24} /></span>
                   </div>
                 </div>
               </div>

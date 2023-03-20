@@ -24,9 +24,8 @@ const SearchModal = ({ setIsModalVisible }) => {
               <MagnifyingGlass size={40} className='text-primary' />
             </span>
             <input
-              type=""
+              type="text"
               name=""
-              value=""
               placeholder="Search..."
               className="font-Raleway font-medium text-sm lg:text-base w-full h-[50px] lg:h-20 block px-6 text-[#938F99] outline-none border border-success"
             />

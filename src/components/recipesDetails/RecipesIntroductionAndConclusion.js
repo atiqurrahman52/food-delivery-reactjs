@@ -1,5 +1,6 @@
 import React from "react";
 import user from "../../assets/image/recipes-detail/user.webp";
+import recipes_detail from '../../assets/image/recipes-detail/recipes-detail-2.webp'
 const RecipesIntroductionAndConclusion = () => {
   return (
     <div className="bg-[#F9F6F1]">
@@ -26,7 +27,7 @@ const RecipesIntroductionAndConclusion = () => {
 
           <div>
             <img
-              src="../assets/image/recipes-detail/recipes-detail-2.webp"
+              src={recipes_detail}
               alt=""
             />
           </div>
