@@ -1,6 +1,6 @@
 import { X } from "@phosphor-icons/react";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import logo from "../../assets/image/logo/logo.webp";
 import { navBarData } from "../../data/navigation/navBarData";
@@ -31,12 +31,12 @@ const Navbar = () => {
              {
                 navBarData.map(({id,title,path}) =>(
                     <li key={id}>
-                    <Link
-                      className="font-Raleway font-semibold text-primary text-sm md:text-base leading-6 activePage"
+                    <NavLink
+                      className="nav_link font-Raleway font-semibold text-primary text-sm md:text-base leading-6 activePage"
                       to={path}
                     >
                     {title}
-                    </Link>
+                    </NavLink>
                   </li>
                 ))
              }
@@ -409,21 +409,36 @@ const Navbar = () => {
               </div>
               <div className="mobile-menu">
                 <ul className="flex flex-col justify-center items-center px-[34px]">
-                  <li className="font-Raleway font-medium text-sm text-primary/60 py-3 border-b border-[#EBEBEB] w-full text-center activePage">
-                    <a href="./index.html">Home</a>
+
+                {
+                  navBarData.map(({id,title,path}) =>(
+                    <li 
+                      key={id}
+                      className="py-3 font-Raleway font-medium text-sm text-primary/60  border-b border-[#EBEBEB] w-full text-center"
+                   >
+                    <NavLink
+                     className="nav_link"
+                     to={path}>{title}</NavLink>
+                  </li>
+                  ))
+                }
+
+                  {/* <li className="font-Raleway font-medium text-sm text-primary/60 py-3 border-b border-[#EBEBEB] w-full text-center">
+                    <a href="./index.html">Home1</a>
+                  </li> */}
+                  {/* <li className="font-Raleway font-medium text-sm text-primary/60 py-3 border-b border-[#EBEBEB] w-full text-center">
+                    <a href="./pages/about.html">About1</a>
                   </li>
                   <li className="font-Raleway font-medium text-sm text-primary/60 py-3 border-b border-[#EBEBEB] w-full text-center">
-                    <a href="./pages/about.html">About</a>
+                    <a href="./pages/recipes.html">Recipes1</a>
                   </li>
                   <li className="font-Raleway font-medium text-sm text-primary/60 py-3 border-b border-[#EBEBEB] w-full text-center">
-                    <a href="./pages/recipes.html">Recipes</a>
-                  </li>
-                  <li className="font-Raleway font-medium text-sm text-primary/60 py-3 border-b border-[#EBEBEB] w-full text-center">
-                    <a href="./pages/shop.html">Shop</a>
+                    <a href="./pages/shop.html">Shop1</a>
                   </li>
                   <li className="font-Raleway font-medium text-sm text-primary/60 py-3 w-full text-center">
-                    <a href="./pages/blog.html">Blog</a>
-                  </li>
+                    <a href="./pages/blog.html">Blog1</a>
+                  </li> */}
+
                 </ul>
               </div>
               <button

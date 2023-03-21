@@ -183,3 +183,9 @@
   background: #004738 !important;
 }
 /* step end  */
+
+/* NavLink active started  */
+.nav_link.active{
+  color: #105C53;
+}
+/* NavLink active end  */
