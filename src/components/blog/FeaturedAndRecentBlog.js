@@ -18,14 +18,11 @@ const FeaturedAndRecentBlog = () => {
                   </h3>
 
                   {featuredData.map(({ id, img, description, title, time }) => (
-                    <Link to="/blog-detail" key={id}>
+                    <Link to={`/blog-detail/${id}`} key={id}>
+                      {/* // <Link  key={id}> */}
                       <div className="border border-[#E5E2DE] rounded-lg p-4 mb-4 lg:mb-8">
                         <div className="mb-4 lg:mb-6">
-                          <img
-                            src={img}
-                            alt=""
-                            className="rounded"
-                          />
+                          <img src={img} alt="" className="rounded" />
                         </div>
 
                         <div className="flex space-x-3 mb-4">
@@ -38,7 +35,7 @@ const FeaturedAndRecentBlog = () => {
                         </div>
                         <div className="mb-4 lg:mb-6">
                           <h3 className="font-Playfair font-bold text-xl lg:text-2xl leading-[34px] text-primary mb-2">
-                          {title}
+                            {title}
                           </h3>
                           <p className="font-Roboto text-sm lg:text-base leading-[21px] lg:leading-6 text-primary/60">
                             {description}
@@ -48,14 +45,12 @@ const FeaturedAndRecentBlog = () => {
                           <p className="font-Raleway font-medium text-sm leading-[21px] text-primary">
                             Read More
                           </p>
-                         
+
                           <ArrowUpRight size={24} />
                         </div>
                       </div>
                     </Link>
                   ))}
-
-                 
                 </div>
 
                 <div className="flex space-x-3 lg:space-x-4 mb-2">
@@ -81,16 +76,19 @@ const FeaturedAndRecentBlog = () => {
                     to="#"
                     className="flex justify-center items-center font-Inter font-bold text-sm leading-[17px] w-7 lg:w-8 h-7 lg:h-8 bg-white text-black rounded-full"
                   >
-                   4
+                    4
                   </Link>
                   <Link
                     to="#"
                     className="flex justify-center items-center font-Inter font-bold text-sm leading-[17px] w-7 lg:w-8 h-7 lg:h-8 bg-white text-black rounded-full"
                   >
-                   ...
+                    ...
                   </Link>
-                  <Link to="#"> 
-                   <span className="flex justify-center items-center font-Inter font-bold  w-7 lg:w-8 h-7 lg:h-8 bg-white text-black rounded-full"> <CaretRight size={18}  /></span>
+                  <Link to="#">
+                    <span className="flex justify-center items-center font-Inter font-bold  w-7 lg:w-8 h-7 lg:h-8 bg-white text-black rounded-full">
+                      {" "}
+                      <CaretRight size={18} />
+                    </span>
                   </Link>
                 </div>
               </div>
@@ -102,15 +100,12 @@ const FeaturedAndRecentBlog = () => {
                   </h3>
                 </div>
 
-               {
-                recentPostData.map(({id,title,img,time}) =>(
-                    <Link to='/blog-detail' key={id}>
+                {recentPostData.map(({ id, title, img, time }) => (
+                  <Link to={`/blog-detail/${id}`} key={id}>
+                    {/* <Link  key={id}> */}
                     <div className="flex items-center space-x-3 lg:space-x-4 border border-[#DBDCD8] mb-4 lg:mb-6">
                       <div className="">
-                        <img
-                          src={img}
-                          alt=""
-                        />
+                        <img src={img} alt="" />
                       </div>
                       <div className="">
                         <div className="flex space-x-2 lg:space-x-3 mb-3 lg:mb-4">
@@ -122,22 +117,19 @@ const FeaturedAndRecentBlog = () => {
                           </p>
                         </div>
                         <p className="font-Playfair font-semibold text-sm lg:text-base leading-[21px] lg:leading-6 mb-3 lg:mb-4">
-                         {title}
+                          {title}
                         </p>
                         <div className="flex items-center space-x-2 cursor-pointer">
                           <p className="font-Raleway font-medium text-sm leading-[21px] text-primary">
                             Read More
                           </p>
-                          
+
                           <ArrowUpRight size={24} />
                         </div>
                       </div>
                     </div>
                   </Link>
-                ))
-               }
-
-               
+                ))}
               </div>
             </div>
           </div>

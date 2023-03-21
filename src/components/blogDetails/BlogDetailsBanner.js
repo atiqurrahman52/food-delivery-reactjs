@@ -1,16 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import blog_banner from "../../assets/image/blog-detail/blog-detail-1.webp";
-
 import user from "../../assets/image/recipes-detail/user.webp";
 
-const BlogDetailsBanner = () => {
+const BlogDetailsBanner = ({ data }) => {
+  // const { title, img } = singleBlog;
+  // const { title, img } = singleBlog2;
+  const newdata = data.find((item) => item !== undefined);
+  console.log(data.find((item) => item !== undefined));
   return (
-    <section id="blog-banner">
+    // <section id="blog-banner">
       <div className="bg-[#F9F6F1]">
         <div className="py-4 lg:py-8">
           <div className="container">
             <h3 className="font-Playfair font-bold text-2xl lg:text-5xl leading-[29px] lg:leading-[58px] mb-8 lg:mb-12">
-              Blog title heading will go here
+              {/* Blog title heading will go here */}
+              {/* {title} */}
+              {newdata.title}
             </h3>
             <div className="flex justify-between flex-col md:flex-row gap-[14px]">
               <div className="flex space-x-3 lg:space-x-4">
@@ -33,7 +39,7 @@ const BlogDetailsBanner = () => {
                 </div>
               </div>
               <div className="flex space-x-2">
-                <a href="#">
+                <Link to="#">
                   <svg
                     width="24"
                     height="25"
@@ -48,7 +54,7 @@ const BlogDetailsBanner = () => {
                       fill="#004738"
                     />
                   </svg>
-                </a>
+                </Link>
                 <a href="#">
                   <svg
                     width="24"
@@ -97,12 +103,12 @@ const BlogDetailsBanner = () => {
             </div>
 
             <div className="pt-8">
-              <img src={blog_banner} alt="" />
+              <img className="w-full h-full" src={newdata.img} alt="" />
             </div>
           </div>
         </div>
       </div>
-    </section>
+    // </section>
   );
 };
 

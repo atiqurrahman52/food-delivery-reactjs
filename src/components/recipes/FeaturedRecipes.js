@@ -6,7 +6,7 @@ import { recipesPostData } from "../../data/recipes/recipesPostData";
 
 const FeaturedRecipes = () => {
   return (
-    <section id="featured-recipes">
+    // <section id="featured-recipes">
       <div className="bg-[#F3F4EF]">
         <div className="py-10 lg:py-20">
           <div className="container">
@@ -94,7 +94,7 @@ const FeaturedRecipes = () => {
           </div>
         </div>
       </div>
-    </section>
+    // </section>
   );
 };
 

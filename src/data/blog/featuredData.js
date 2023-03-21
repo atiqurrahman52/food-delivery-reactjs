@@ -7,28 +7,28 @@ const featuredData = [
         id:0,
         img:image1,
         time:'5 min read',
-        title:'Blog title heading will go here',
+        title:'Blog1 title heading will go here featuredData',
         description:'Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim .....'
     },
     {
         id:1,
         img:image2,
         time:'5 min read',
-        title:'Blog title heading will go here',
+        title:'Blog2 title heading will go here',
         description:'Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim .....'
     },
     {
         id:2,
         img:image3,
         time:'5 min read',
-        title:'Blog title heading will go here',
+        title:'Blog3 title heading will go here',
         description:'Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim .....'
     },
     {
         id:3,
         img:image4,
         time:'5 min read',
-        title:'Blog title heading will go here',
+        title:'Blog4 title heading will go here',
         description:'Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim .....'
     },
 ]
