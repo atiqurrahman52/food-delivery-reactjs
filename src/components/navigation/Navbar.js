@@ -422,23 +422,7 @@ const Navbar = () => {
                   </li>
                   ))
                 }
-
-                  {/* <li className="font-Raleway font-medium text-sm text-primary/60 py-3 border-b border-[#EBEBEB] w-full text-center">
-                    <a href="./index.html">Home1</a>
-                  </li> */}
-                  {/* <li className="font-Raleway font-medium text-sm text-primary/60 py-3 border-b border-[#EBEBEB] w-full text-center">
-                    <a href="./pages/about.html">About1</a>
-                  </li>
-                  <li className="font-Raleway font-medium text-sm text-primary/60 py-3 border-b border-[#EBEBEB] w-full text-center">
-                    <a href="./pages/recipes.html">Recipes1</a>
-                  </li>
-                  <li className="font-Raleway font-medium text-sm text-primary/60 py-3 border-b border-[#EBEBEB] w-full text-center">
-                    <a href="./pages/shop.html">Shop1</a>
-                  </li>
-                  <li className="font-Raleway font-medium text-sm text-primary/60 py-3 w-full text-center">
-                    <a href="./pages/blog.html">Blog1</a>
-                  </li> */}
-
+   
                 </ul>
               </div>
               <button

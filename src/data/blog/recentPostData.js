@@ -1,4 +1,4 @@
-import image1 from "../../assets/image/blog/recent-post-1.png";
+import image1 from "../../assets/image/blog/recent-post-3.webp";
 import image2 from "../../assets/image/blog/recent-post-2.webp";
 import image3 from "../../assets/image/blog/recent-post-3.webp";
 import image4 from "../../assets/image/blog/recent-post-4.webp";
@@ -8,7 +8,7 @@ const recentPostData = [
     id: 100,
     img: image1,
     time: "5 min read",
-    title: "Blog1 title heading will go here recentPostData",
+    title: "Blog1 title heading will go here ",
   },
 
   {

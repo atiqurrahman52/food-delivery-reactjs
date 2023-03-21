@@ -780,7 +780,7 @@ const CustomerReviews = () => {
                   <input
                     type="text"
                     name=""
-                    value=""
+                   
                     className="w-full md:w-[641px] h-[98px] border border-[#D2D1E0] rounded-xl outline-none px-2 mb-4"
                   />
                   <div className="flex gap-3 md:gap-6 flex-col md:flex-row mb-4">
@@ -794,8 +794,8 @@ const CustomerReviews = () => {
                       <input
                         type="text"
                         name=""
-                        value=""
-                        className="w-full md:w-[308px] h-[48px] border border-[#D2D1E0] rounded-xl outline-none"
+                       
+                        className="w-full md:w-[308px] px-2 h-[48px] border border-[#D2D1E0] rounded-xl outline-none"
                       />
                     </div>
                     <div className="flex flex-col">
@@ -808,8 +808,8 @@ const CustomerReviews = () => {
                       <input
                         type="email"
                         name=""
-                        value=""
-                        className="w-full md:w-[308px] h-[48px] border border-[#D2D1E0] rounded-xl outline-none"
+                        
+                        className="w-full md:w-[308px] px-2 h-[48px] border border-[#D2D1E0] rounded-xl outline-none"
                       />
                     </div>
                   </div>

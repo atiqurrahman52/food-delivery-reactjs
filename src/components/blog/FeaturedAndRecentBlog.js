@@ -105,7 +105,7 @@ const FeaturedAndRecentBlog = () => {
                     {/* <Link  key={id}> */}
                     <div className="flex items-center space-x-3 lg:space-x-4 border border-[#DBDCD8] mb-4 lg:mb-6">
                       <div className="">
-                        <img src={img} alt="" />
+                        <img className="" src={img} alt="" />
                       </div>
                       <div className="">
                         <div className="flex space-x-2 lg:space-x-3 mb-3 lg:mb-4">
