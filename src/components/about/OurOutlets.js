@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import { outletsData } from "../../data/about/OurOutletsData";
 
 const OurOutlets = () => {
+  const [tabActive, setTabActive] = useState(0);
+
   return (
     <section id="our-outlets">
       <div className="bg-[#FFFDF9]">
@@ -15,79 +18,45 @@ const OurOutlets = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
-              <ul className="outlets">
-                <li>
-                  <a href="#outlet1">
-                    <div className="mb-4 lg:mb-8">
+            <div className="grid lg:grid-cols-2 gap-4 lg:gap-8">
+              <div className="space-y-10">
+                {outletsData.map(({ id, cityName, location }) => (
+                  <div
+                    key={id}
+                    onClick={() => setTabActive(id)}
+                    className="cursor-pointer py-4 bg-[#F4F4F4]"
+                  >
+                    <div
+                      className={`pl-8 border-l-2 ${
+                        tabActive === id
+                          ? "border-yellow"
+                          : "border-transparent"
+                      }`}
+                    >
                       <h3 className="font-Playfair font-bold text-xl lg:text-2xl leading-7 lg:leading-[34px] text-primary mb-4">
-                        Sydney
+                        {cityName}
                       </h3>
                       <p className="font-Raleway font-medium text-sm lg:text-base leading-[21px] lg:leading-6 text-primary/80 mb-6">
-                        123 Sample St, Sydney NSW 2000 AU
+                        {location}
                       </p>
-
-                      <p>View Map</p>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#outlet2">
-                    <div className="mb-4 lg:mb-8">
-                      <h3 className="font-Playfair font-bold text-xl lg:text-2xl leading-7 lg:leading-[34px] text-primary mb-4">
-                        New York
-                      </h3>
-                      <p className="font-Raleway font-medium text-sm lg:text-base leading-[21px] lg:leading-6 text-primary/80 mb-6">
-                        123 Sample St, New York NY 10000 USA
+                      <p
+                        className={`font-Raleway font-bold text-sm md:text-base text-black  ${
+                          id === tabActive &&
+                          "font-Raleway font-bold text-sm md:text-base text-success"
+                        }`}
+                      >
+                        View Map
                       </p>
-                      <p>View Map</p>
                     </div>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#outlet3">
-                    <div className="mb-4 lg:mb-8">
-                      <h3 className="font-Playfair font-bold text-xl lg:text-2xl leading-7 lg:leading-[34px] text-primary mb-4">
-                        London
-                      </h3>
-                      <p className="font-Raleway font-medium text-sm lg:text-base leading-[21px] lg:leading-6 text-primary/80 mb-6">
-                        123 Sample St, London W1C 1DE, United Kingdom
-                      </p>
-                      <p>View Map</p>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-
+                  </div>
+                ))}
+              </div>
               <div>
-                <div id="outlet1" className="outlet">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319"
-                    width={1000}
-                    height={500}
-                    frameborder="0"
-                    style="border: 0"
-                  ></iframe>
-                </div>
-                <div id="outlet2" className="outlet">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319"
-                    width="100%"
-                    height="500"
-                    frameborder="0"
-                    style="border: 0"
-                  ></iframe>
-                </div>
-                <div id="outlet3" className="outlet">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319"
-                    width="100%"
-                    height="500"
-                    frameborder="0"
-                    style="border: 0"
-                  ></iframe>
-                </div>
+                <iframe
+                  src={outletsData[tabActive].map}
+                  width="100%"
+                  height="500"
+                />
               </div>
             </div>
           </div>
