@@ -5,9 +5,11 @@ import { Link } from "react-router-dom";
 import { productDescriptionData } from "../../data/productDetails/ProductDescriptionData";
 import { CaretRight } from "@phosphor-icons/react";
 
-const ProductDescription = () => {
+const ProductDescription = ({singleProduct}) => {
+  const {img,productName} =singleProduct;
+
   return (
-    <section id="product-details">
+ 
       <div className="bg-[#F9F6F1]">
         <div className="container">
           <div className="py-4 lg:py-6">
@@ -52,7 +54,7 @@ const ProductDescription = () => {
                     allowTouchMove={true}
                     loopFillGroupWithBlank={true}
                     modules={[Autoplay, Navigation, Pagination]}
-                    className="teamSlider !px-2 !py-10"
+                    className="!px-2 !py-10"
                     pagination={{
                       dynamicBullets: true,
                     }}
@@ -75,7 +77,7 @@ const ProductDescription = () => {
                      ))} 
                   </Swiper>
 
-                  <div className="swiper-pagination relatedProductRecipesPage"></div>
+                  <div className="swiper-pagination"></div>
                 </div>
 
              
@@ -83,7 +85,8 @@ const ProductDescription = () => {
 
               <div className="col-span-12 lg:col-span-5">
                 <h3 className="font-Playfair font-bold text-2xl leading-[34px] text-black mb-2">
-                  Baby Potato
+                  {/* Baby Potato */}
+                  {productName}
                 </h3>
                 <p className="font-Raleway font-extrabold text-xl leading-[30px] text-success mb-2">
                   $55
@@ -275,7 +278,7 @@ const ProductDescription = () => {
           </div>
         </div>
       </div>
-    </section>
+   
   );
 };
 

@@ -115,7 +115,7 @@ const Product = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {productData.map(({ id, img, productName, bgColor, price }) => (
               // <a href="../pages/product-details.html">
-              <Link to="/product-details">
+              <Link to={`/product-details/${id}`}>
                 <div
                   style={{ backgroundColor: bgColor }}
                   className="bg-[#E6E8D3] p-6 product-card"

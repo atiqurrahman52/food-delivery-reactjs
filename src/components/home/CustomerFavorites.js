@@ -55,7 +55,7 @@ const CustomerFavorites = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {productData.map(({ id, img, bgColor, productName, price }) => (
-                <Link to="" key={id}>
+                <Link to={`/product-details/${id}`} key={id}>
                   <div
                     style={{ backgroundColor: bgColor }}
                     className="p-6 product-card"
