@@ -17,6 +17,7 @@ import BillingAddress from "./pages/BillingAddress";
 import PaymentOptions from "./pages/PaymentOptions";
 import ProductDetails from "./pages/ProductDetails";
 import RecipesDetails from "./pages/RecipesDetails";
+import NotFount from "./components/shared/NotFount";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
         <Route path="/product-details/:id" element={<ProductDetails />} />
         <Route path="/recipes" element={<Recipes />} />
         <Route path="/recipes-details/:id" element={<RecipesDetails />} />
+        <Route path="*"  element={<NotFount />} />
       </Route>
     </Routes>
   );

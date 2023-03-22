@@ -24,7 +24,8 @@ const OurOutlets = () => {
                   <div
                     key={id}
                     onClick={() => setTabActive(id)}
-                    className="cursor-pointer py-4 bg-[#F4F4F4]"
+                    // className="cursor-pointer py-4 bg-[#F4F4F4]"
+                    className={`cursor-pointer py-4 ${id === tabActive ? "bg-[#F4F4F4]" : "bg-[#FFFDF9]"} `}
                   >
                     <div
                       className={`pl-8 border-l-2 ${
@@ -56,6 +57,7 @@ const OurOutlets = () => {
                   src={outletsData[tabActive].map}
                   width="100%"
                   height="500"
+                  title="map"
                 />
               </div>
             </div>

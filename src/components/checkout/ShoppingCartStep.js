@@ -1,5 +1,6 @@
 import { CaretLeft, X } from "@phosphor-icons/react";
 import food1 from '../../assets/image/food/food-3.webp'
+import { shoppingCartData } from "../../data/checkout/shoppingCartData";
 import BillingSidebar from "./BillingSidebar";
 
 const ShoppingCartStep = ({ currentStep, handleNext }) => {
@@ -22,31 +23,34 @@ const ShoppingCartStep = ({ currentStep, handleNext }) => {
                     Item
                   </p>
                 </div>
-                <div className="col-span-12 lg:col-span-3">
+                <div className="col-span-12 lg:col-span-4">
                   <p className="font-Raleway font-medium text-base leading-6 text-primary/80">
                     Quantity
                   </p>
                 </div>
-                <div className="col-span-12 lg:col-span-3">
+                <div className="col-span-12 lg:col-span-2">
                   <p className="font-Raleway font-bold text-base leading-6 text-primary/80">
                     Subtotal
                   </p>
                 </div>
               </div>
 
-              <div className="flex flex-col lg:flex-row relative border-b py-4">
-                <div className="md:w-1/2">
+             
+              <div>
+                {shoppingCartData.map(({id,img,productName,price,quantity}) =>(
+                  <div className="flex flex-col lg:flex-row relative border-b py-4">
+                     <div className="md:w-1/2">
                   <div className="flex flex-col lg:flex-row lg:items-center gap-5">
-                    <div className="w-full lg:w-[76px] h-full lg:h-[76px] bg-[#FFEEDC]">
-                      <img src={food1} alt="" />
+                    <div className="w-full xl:w-[76px] h-full xl:h-[76px] bg-[#FFEEDC]">
+                      <img src={img} alt="" />
                     </div>
 
                     <div className="">
                       <p className="font-Playfair font-bold text-base lg:text-xl leading-[30px] text-primary mb-1">
-                        Baby Carrots 
+                       {productName}
                       </p>
                       <p className="font-Raleway font-medium text-sm leading-[21px] text-primary/60">
-                        4 kg
+                        {quantity} kg
                       </p>
                     </div>
                   </div>
@@ -63,92 +67,17 @@ const ShoppingCartStep = ({ currentStep, handleNext }) => {
                     />
                   </div>
 
-                  <div className="flex items-center space-x-4 lg:w-1/2">
+                  <div className="flex items-center space-x-4">
                     <p className="font-Raleway font-bold text-base leading-[18px] text-success">
-                      $ 1,750
+                      $ {price}
                     </p>
-                    <span className=" text-[#9C9C9C] absolute lg:static -top-2.5 right-0"> <X size={24} /></span>
+                    <button className="text-[#9C9C9C] absolute lg:static -top-3.5 right-0"> <X size={24} /></button>
                   </div>
                 </div>
+                   </div>
+                ))}
               </div>
 
-              <div className="flex flex-col lg:flex-row relative border-b py-4">
-                <div className="md:w-1/2">
-                  <div className="flex flex-col lg:flex-row lg:items-center gap-5">
-                    <div className="w-full lg:w-[76px] h-full lg:h-[76px] bg-[#FFEEDC]">
-                      <img src={food1} alt="" />
-                    </div>
-
-                    <div className="">
-                      <p className="font-Playfair font-bold text-base lg:text-xl leading-[30px] text-primary mb-1">
-                        Baby Carrots 
-                      </p>
-                      <p className="font-Raleway font-medium text-sm leading-[21px] text-primary/60">
-                        4 kg
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="lg:w-1/2 flex flex-row-reverse lg:flex-row justify-between">
-                  <div className="flex items-center lg:w-1/2">
-                    <input
-                      className="border border-success rounded text-center"
-                      type="number"
-                      id="quantity"
-                      name="quantity"
-                      min="1"
-                      max="5"
-                    />
-                  </div>
-
-                  <div className="flex items-center space-x-4 lg:w-1/2">
-                    <p className="font-Raleway font-bold text-base leading-[18px] text-success">
-                      $ 1,750
-                    </p>
-
-                    <span className=" text-[#9C9C9C] absolute lg:static -top-2.5 right-0"> <X size={24} /></span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-col lg:flex-row relative border-b py-4">
-                <div className="md:w-1/2">
-                  <div className="flex flex-col lg:flex-row lg:items-center gap-5">
-                    <div className="w-full lg:w-[76px] h-full lg:h-[76px] bg-[#FFEEDC]">
-                      <img src={food1} alt="" />
-                    </div>
-
-                    <div className="">
-                      <p className="font-Playfair font-bold text-base lg:text-xl leading-[30px] text-primary mb-1">
-                        Baby Carrots 
-                      </p>
-                      <p className="font-Raleway font-medium text-sm leading-[21px] text-primary/60">
-                        4 kg
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="lg:w-1/2 flex flex-row-reverse lg:flex-row justify-between">
-                  <div className="flex items-center lg:w-1/2">
-                    <input
-                      className="border border-success rounded text-center"
-                      type="number"
-                      id="quantity"
-                      name="quantity"
-                      min="1"
-                      max="5"
-                    />
-                  </div>
-
-                  <div className="flex items-center space-x-4 lg:w-1/2">
-                    <p className="font-Raleway font-bold text-base leading-[18px] text-success">
-                      $ 1,750
-                    </p>
-
-                    <span className=" text-[#9C9C9C] absolute lg:static -top-2.5 right-0"> <X size={24} /></span>
-                  </div>
-                </div>
-              </div>
 
               <button
                 type=""

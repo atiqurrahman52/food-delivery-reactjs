@@ -2,6 +2,7 @@ import { Cardholder, MapPin, User } from "@phosphor-icons/react";
 import React from "react";
 import { Link } from "react-router-dom";
 import user from "../assets/image/profile/user.webp";
+import UserMenuBar from "../components/userProfile/UserMenuBar";
 
 const PaymentOptions = () => {
   return (
@@ -10,61 +11,7 @@ const PaymentOptions = () => {
         <div className="py-4 lg:py-8">
           <div className="grid grid-cols-12 gap-6">
             <div className="col-span-12 md:col-span-4">
-              <div className="bg-[#FAFCFC] lg:h-[681px]">
-                <div className="flex flex-col items-center mb-10">
-                  <div className="mb-4">
-                    <div>
-                      <img src={user} alt="" />
-                    </div>
-                  </div>
-                  <p className="font-Playfair font-bold text-base lg:text-xl leading-6 lg:leading-[30px] text-[#222329] mb-1">
-                    MIRZA AL MUSADDEQUE
-                  </p>
-                  <p className="font-Raleway font-medium text-sm leading-[21px] text-[#A3A3A5]">
-                    example@email.com
-                  </p>
-                </div>
-                {/* <!-- <ul className="space-y-4 overflow-x-auto border"> --> */}
-                {/* <!-- <ul className="flex flex-row lg:flex-col items-center lg:items-start justify-start lg:space-y-7  space-x-2 overflow-x-auto lg:overflow-x-hidden overflow-y-clip whitespace-nowrap py-3"> --> */}
-                <ul className="flex flex-row md:flex-col items-center lg:items-start justify-start space-y-4 overflow-x-auto md:overflow-x-hidden overflow-y-clip whitespace-nowrap py-3">
-                  <li className="px-8 text-[#016A78]">
-                    <Link
-                      to="/profile"
-                      className="flex items-center gap-1 lg:gap-2.5"
-                    >
-                     
-                      <User size={24} className="" />
-                      <p className="font-Overpass font-semibold text-sm leading-[21px] text-[#016A78]">
-                        Profile
-                      </p>
-                    </Link>
-                  </li>
-                  <li className="px-8 text-[#016A78]">
-                    <Link
-                      to="/billing-address"
-                      className="flex items-center gap-1 lg:gap-2.5"
-                    >
-                      
-                      <MapPin size={24} className="" />
-                      <p className="font-Overpass font-semibold text-sm leading-[21px] text-[#016A78]">
-                        Billing Address
-                      </p>
-                    </Link>
-                  </li>
-                  <li className="px-8 text-[#016A78] activeProfile">
-                    <Link
-                      to="/payment-options"
-                      className="flex items-center gap-1 lg:gap-2.5"
-                    >
-                     
-                      <Cardholder size={24} className="" />
-                      <p className="font-Overpass font-semibold text-sm leading-[21px]">
-                        Payment Options
-                      </p>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
+            <UserMenuBar />
             </div>
 
             <div className="col-span-12 md:col-span-8">
