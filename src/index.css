@@ -194,7 +194,7 @@
 .profile-active.active{
   /* padding: 10px 20px; */
   border: 1px solid #004738;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 .profile-active.active span,
 .profile-active.active p {
@@ -212,6 +212,6 @@
   width: 0;
   scrollbar-width:none
 }
-.scrollbar-hidden{
+/* .scrollbar-hidden{
   scrollbar-width:none
-}
+} */

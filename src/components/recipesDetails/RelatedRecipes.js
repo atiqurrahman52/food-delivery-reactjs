@@ -18,7 +18,7 @@ const RelatedRecipes = () => {
             <h3 className="font-Playfair font-bold text-2xl lg:text-5xl leading-[29px] lg:leading-[58px] text-primary mb-2">
               Related Recipes
             </h3>
-            <p className="font-Raleway font-medium text-sm leading-[21pxpx] text-primary/60">
+            <p className="font-Raleway font-medium text-sm leading-[21px] text-primary/60">
               Lorem ipsum dolor sit amet consectetur. i psum Lorem dolor sit
               amet consectetur.
             </p>
@@ -83,7 +83,7 @@ const RelatedRecipes = () => {
                           <p className="font-Raleway text-base leading-6 text-primary/60 mb-6">
                             {description}
                           </p>
-                          <div className="flex items-center gap-2 text-primary font-medium text-sm leading-[21pxpx]">
+                          <div className="flex items-center gap-2 text-primary font-medium text-sm leading-[21px]">
                             <p className="font-Raleway font-medium text-sm leading-[21px]">
                               Read More
                             </p>

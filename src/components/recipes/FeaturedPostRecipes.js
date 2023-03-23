@@ -14,7 +14,7 @@ const FeaturedPostRecipes = () => {
             </h3>
             <label for="" className="relative h-12 w-full md:w-[300px]">
               <span className="absolute top-1/2 -translate-y-1/2 right-2 py-3 cursor-pointer">
-                <MagnifyingGlass size={24} className='text-[#C7C7C3]' />
+                <MagnifyingGlass size={24} className="text-[#C7C7C3]" />
               </span>
               <input
                 type=""
@@ -26,47 +26,40 @@ const FeaturedPostRecipes = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {
-                featuredPostRecipesData.map(({id,img,time,title,description}) =>(
-                    <Link key={id} to="#">
-                    <div className="border border-[#D6D7D2] rounded-lg hover:shadow-[0_20px_24px_-4px_rgba(0,0,0,0.08),0px_8px_8px_-4px_rgba(0,0,0,0.03)] transition-all duration-300">
-                      <div className="p-3 space-y-3">
-                        <div>
-                          <img
-                            className="w-full h-full mb-6"
-                            src={img}
-                            alt=""
-                          />
-                        </div>
-                        <div className="flex space-x-3 mb-4">
-                          <p className="font-Raleway font-bold text-xs leading-[18px] text-success">
-                            Category 
-                          </p>
-                          <p className="font-Raleway font-bold text-xs leading-[18px] text-primary">
-                            {time}
-                          </p>
-                        </div>
-                        <p className="font-Raleway font-bold text-2xl leading-[34px] text-primary mb-2">
-                         {title}
+            {featuredPostRecipesData.map(
+              ({ id, img, time, title, description }) => (
+                <Link key={id} to="#">
+                  <div className="border border-[#D6D7D2] rounded-lg hover:shadow-[0_20px_24px_-4px_rgba(0,0,0,0.08),0px_8px_8px_-4px_rgba(0,0,0,0.03)] transition-all duration-300">
+                    <div className="p-3 space-y-3">
+                      <div>
+                        <img className="w-full h-full mb-6" src={img} alt="" />
+                      </div>
+                      <div className="flex space-x-3 mb-4">
+                        <p className="font-Raleway font-bold text-xs leading-[18px] text-success">
+                          Category
                         </p>
-                        <p className="font-Raleway text-base leading-6 text-primary/60 mb-6">
-                         {description}
+                        <p className="font-Raleway font-bold text-xs leading-[18px] text-primary">
+                          {time}
                         </p>
-                        <div className="flex items-center gap-2 text-primary font-medium text-sm leading-[21pxpx]">
-                          <p className="font-Raleway font-medium text-sm leading-[21px]">
-                            Read More
-                          </p>
-                      
-                          <ArrowUpRight size={24} className='text-primary' />
-                        </div>
+                      </div>
+                      <p className="font-Raleway font-bold text-2xl leading-[34px] text-primary mb-2">
+                        {title}
+                      </p>
+                      <p className="font-Raleway text-base leading-6 text-primary/60 mb-6">
+                        {description}
+                      </p>
+                      <div className="flex items-center gap-2 text-primary font-medium text-sm leading-[21px]">
+                        <p className="font-Raleway font-medium text-sm leading-[21px]">
+                          Read More
+                        </p>
+
+                        <ArrowUpRight size={24} className="text-primary" />
                       </div>
                     </div>
-                  </Link>
-      
-                ))
-            }
-            
-           
+                  </div>
+                </Link>
+              )
+            )}
           </div>
           <div className="flex justify-center pt-6 lg:pt-8">
             <button className="py-3 px-4 w-[120px] h-[52px] rounded-[48px] bg-[#248C80] load_more">

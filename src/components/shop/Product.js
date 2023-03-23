@@ -21,9 +21,14 @@ const Product = () => {
               <div className="relative">
                 <button
                   onClick={() => setFilter(!filter)}
-                  className={`filter-btn ${filter && "active"} flex justify-center items-center gap-2 border-[1.5px] border-success rounded p-2`}
+                  className={`filter-btn ${
+                    filter && "active"
+                  } flex justify-center items-center gap-2 border-[1.5px] border-success rounded p-2`}
                 >
-                  <SlidersHorizontal size={24} className={`${filter ? "text-white":"text-success"}`} />
+                  <SlidersHorizontal
+                    size={24}
+                    className={`${filter ? "text-white" : "text-success"}`}
+                  />
                   <p className="font-Raleway font-semibold text-sm leading-[21px] text-success">
                     Filter
                   </p>
@@ -66,16 +71,25 @@ const Product = () => {
 
               <div className="relative">
                 <button
-                 onClick={() => setCategories(!categories)}
-                 className={`${categories && "active"} categories-btn flex justify-center items-center gap-2 border-[1.5px] border-success rounded p-2`}>
-                  <CirclesThreePlus size={24} className={`${categories ? "text-white": "text-success"}`} />
+                  onClick={() => setCategories(!categories)}
+                  className={`${
+                    categories && "active"
+                  } categories-btn flex justify-center items-center gap-2 border-[1.5px] border-success rounded p-2`}
+                >
+                  <CirclesThreePlus
+                    size={24}
+                    className={`${categories ? "text-white" : "text-success"}`}
+                  />
                   <p className="font-Raleway font-semibold text-sm leading-[21px] text-success">
                     Categories
                   </p>
                 </button>
 
-                <div className={`categories-dropdown ${ categories ? "opacity-100 visible": "opacity-0 invisible"} transition-all absolute pt-[14px] lg:pt-[15px] -right-[35px] md:right-0 z-10`}>
-               
+                <div
+                  className={`categories-dropdown ${
+                    categories ? "opacity-100 visible" : "opacity-0 invisible"
+                  } transition-all absolute pt-[14px] lg:pt-[15px] -right-[35px] md:right-0 z-10`}
+                >
                   <div className="bg-[#F9F6F1] shadow-[0_24px_48px_-12px_rgba(0,0,0,0.18)] p-4 w-[261px] h-auto right-0 rounded-lg">
                     <p className="font-Playfair font-bold text-base lg:text-xl leading-6 lg:leading-[30px] mb-4">
                       Product Categories
@@ -130,13 +144,13 @@ const Product = () => {
                     </p>
                     <p className="font-Playfair font-bold text-xl lg:text-2xl text-success leading-[28px] lg:leading-[34px]">
                       $ {price}
-                      <span className="font-Raleway text-sm lg:text-base leading-[21pxpx] text-primary">
+                      <span className="font-Raleway text-sm lg:text-base leading-[21px] text-primary">
                         /kg
                       </span>
                     </p>
                     <button
                       type=""
-                      className="font-Raleway font-medium text-sm lg:text-base leading-[21pxpx] lg:leading-6 py-2 text-success md:py-3 w-full border border-success rounded-[5px] z-[1] relative overflow-hidden add-to-cart-btn"
+                      className="font-Raleway font-medium text-sm lg:text-base leading-[21px] lg:leading-6 py-2 text-success md:py-3 w-full border border-success rounded-[5px] z-[1] relative overflow-hidden add-to-cart-btn"
                     >
                       Add to cart
                     </button>

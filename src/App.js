@@ -17,7 +17,7 @@ import BillingAddress from "./pages/BillingAddress";
 import PaymentOptions from "./pages/PaymentOptions";
 import ProductDetails from "./pages/ProductDetails";
 import RecipesDetails from "./pages/RecipesDetails";
-import NotFount from "./components/shared/NotFount";
+import NotFound from "./components/shared/NotFound";
 
 function App() {
   return (
@@ -32,7 +32,6 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog-detail/:id" element={<BlogDetail />} />
-        {/* <Route path="/blog-detail" element={<BlogDetail />} /> */}
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/billing-address" element={<BillingAddress />} />
@@ -41,7 +40,7 @@ function App() {
         <Route path="/product-details/:id" element={<ProductDetails />} />
         <Route path="/recipes" element={<Recipes />} />
         <Route path="/recipes-details/:id" element={<RecipesDetails />} />
-        <Route path="*"  element={<NotFount />} />
+        <Route path="*"  element={<NotFound />} />
       </Route>
     </Routes>
   );

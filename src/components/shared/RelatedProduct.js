@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper";
 import { productData } from "../../data/sharedData/productData";
@@ -18,7 +17,7 @@ const RelatedProduct = () => {
             <h3 className="font-Playfair font-bold text-2xl  leading-[29px] lg:leading-[58px] text-primary mb-2">
               Related Products
             </h3>
-            <p className="font-Raleway font-medium text-sm leading-[21pxpx] text-primary/60">
+            <p className="font-Raleway font-medium text-sm leading-[21px] text-primary/60">
               Lorem ipsum dolor sit amet consectetur. i psum Lorem dolor sit
               amet consectetur.
             </p>
@@ -100,7 +99,6 @@ const RelatedProduct = () => {
 
             <div className="swiper-pagination"></div>
           </div>
-
         </div>
       </div>
     </div>

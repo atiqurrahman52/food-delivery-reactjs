@@ -13,7 +13,7 @@ const DeliveryWorks = () => {
               <h3 className="font-Playfair font-bold text-2xl lg:text-5xl leading-[29px] lg:leading-[58px] text-primary mb-2">
                 How Delivery Works
               </h3>
-              <p className="font-Raleway font-medium text-sm leading-[21pxpx] text-primary/60">
+              <p className="font-Raleway font-medium text-sm leading-[21px] text-primary/60">
                 The following Process we always follow.
               </p>
             </div>
@@ -64,7 +64,7 @@ const DeliveryWorks = () => {
                 <h3 className="font-Playfair font-bold text-primary text-base lg:text-xl leading-6 lg:leading-[30px] mb-4">
                   Choose Your Location
                 </h3>
-                <p className="font-Raleway font-medium text-sm leading-[21pxpx] text-primary opacity-[0.6] text-center">
+                <p className="font-Raleway font-medium text-sm leading-[21px] text-primary opacity-[0.6] text-center">
                   Lorem ipsum dolor sit amet, consectetr <br />
                   adipiscing elit, sed diam nonummy
                 </p>
@@ -142,7 +142,7 @@ const DeliveryWorks = () => {
                 <h3 className="font-Playfair font-bold text-primary text-base lg:text-xl leading-6 lg:leading-[30px] mb-4">
                   Make Your Order
                 </h3>
-                <p className="font-Raleway font-medium text-sm leading-[21pxpx] text-primary opacity-[0.6] text-center">
+                <p className="font-Raleway font-medium text-sm leading-[21px] text-primary opacity-[0.6] text-center">
                   Lorem ipsum dolor sit amet, consectetr <br />
                   adipiscing elit, sed diam nonummy
                 </p>
@@ -218,7 +218,7 @@ const DeliveryWorks = () => {
                 <h3 className="font-Playfair font-bold text-primary text-base lg:text-xl leading-6 lg:leading-[30px] mb-4">
                   Food Is on the way
                 </h3>
-                <p className="font-Raleway font-medium text-sm leading-[21pxpx] text-primary opacity-[0.6] text-center">
+                <p className="font-Raleway font-medium text-sm leading-[21px] text-primary opacity-[0.6] text-center">
                   Lorem ipsum dolor sit amet, consectetr <br />
                   adipiscing elit, sed diam nonummy
                 </p>

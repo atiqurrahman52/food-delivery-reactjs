@@ -15,13 +15,12 @@ const ImageGallery = () => {
               <h3 className="font-Playfair font-bold text-2xl lg:text-5xl leading-[29px] lg:leading-[58px] text-primary mb-2">
                 Image Gallery
               </h3>
-              <p className="font-Raleway font-medium text-sm leading-[21pxpx] text-primary/60">
+              <p className="font-Raleway font-medium text-sm leading-[21px] text-primary/60">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </div>
 
             <ResponsiveMasonry
-              
               columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
             >
               <Masonry gutter="24px">

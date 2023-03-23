@@ -1,4 +1,4 @@
-import { Cardholder, MapPin, User } from "@phosphor-icons/react";
+import { Cardholder, MapPin, Plus, User } from "@phosphor-icons/react";
 import React from "react";
 import { Link } from "react-router-dom";
 import user from "../assets/image/profile/user.webp";
@@ -36,6 +36,7 @@ const PaymentOptions = () => {
                 >
                   <span className="text-success text-xl">
                     <i className="ph-plus text-2xl"></i>
+                    {/* <Plus size={24} /> */}
                   </span>
                   <p className="font-Raleway font-bold text-sm leading-[21px] text-success">
                     Add New method

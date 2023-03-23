@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from '../../assets/image/footer/footer-logo.webp'
+import logo from "../../assets/image/footer/footer-logo.webp";
 import { navBarData } from "../../data/navigation/navBarData";
 import { socialData } from "../../data/sharedData/socialData";
 const Footer = () => {
@@ -32,13 +32,13 @@ const Footer = () => {
                   <div className="flex flex-col">
                     <a
                       href="tel:1800 123 4567"
-                      className="font-Raleway font-medium text-sm leading-[21pxpx] text-white"
+                      className="font-Raleway font-medium text-sm leading-[21px] text-white"
                     >
                       1800 123 4567
                     </a>
                     <a
                       href="mailto:info@relume.io"
-                      className="font-Raleway font-medium text-sm leading-[21pxpx] text-white"
+                      className="font-Raleway font-medium text-sm leading-[21px] text-white"
                     >
                       info@relume.io
                     </a>
@@ -46,31 +46,27 @@ const Footer = () => {
                 </div>
 
                 <div className="flex items-center justify-center md:justify-start space-x-3">
-                  {
-                    socialData.map(({id,img,path}) =>(
-                      <Link to={path}>
-                       <img src={img} alt='' />
-                      </Link>
-                    ))
-                  }
-                  
+                  {socialData.map(({ id, img, path }) => (
+                    <Link to={path}>
+                      <img src={img} alt="" />
+                    </Link>
+                  ))}
                 </div>
               </div>
 
               <div className="col-span-6 md:col-span-3 lg:col-span-5">
                 <ul className="space-y-3">
-
-                  {navBarData.map(({id,title,path}) =>(
+                  {navBarData.map(({ id, title, path }) => (
                     <li>
-                    <Link key={id}
-                      to={path}
-                      className="font-Raleway font-medium text-sm xl:text-base leading-[21px] xl:leading-6 text-yellow hover:text-white block md:text-end"
-                    >
-                      {title}
-                    </Link>
-                  </li>
+                      <Link
+                        key={id}
+                        to={path}
+                        className="font-Raleway font-medium text-sm xl:text-base leading-[21px] xl:leading-6 text-yellow hover:text-white block md:text-end"
+                      >
+                        {title}
+                      </Link>
+                    </li>
                   ))}
-                 
 
                   <li>
                     <Link

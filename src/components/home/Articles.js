@@ -16,15 +16,18 @@ const Articles = () => {
               <h3 className="font-Playfair font-bold text-2xl lg:text-5xl leading-[29px] lg:leading-[58px] text-primary mb-2">
                 Articles & Useful tips
               </h3>
-              <p className="font-Raleway font-medium text-sm leading-[21pxpx] text-primary/60">
+              <p className="font-Raleway font-medium text-sm leading-[21px] text-primary/60">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {
-                articlesData.map(({id,img,title,description,readMore}) =>(
-                  <Link to="#" key={id} className='hover:shadow-[0_20px_24px_-4px_rgba(0,0,0,0.08),0px_8px_8px_-4px_rgba(0,0,0,0.03)] transition duration-500 ease-out hover:ease-in'>
+              {articlesData.map(({ id, img, title, description, readMore }) => (
+                <Link
+                  to="#"
+                  key={id}
+                  className="hover:shadow-[0_20px_24px_-4px_rgba(0,0,0,0.08),0px_8px_8px_-4px_rgba(0,0,0,0.03)] transition duration-500 ease-out hover:ease-in"
+                >
                   <div className="border border-[#D6D7D2]">
                     <div className="p-4 space-y-3">
                       <div className="flex justify-center w-full h-[232px]">
@@ -34,32 +37,27 @@ const Articles = () => {
                         {title}
                       </p>
                       <p className="font-Raleway text-sm lg:text-base leading-6 text-primary/60">
-                        {
-                          description
-                        }
+                        {description}
                       </p>
-                      <div className="flex items-center gap-2 text-primary font-medium text-sm leading-[21pxpx]">
+                      <div className="flex items-center gap-2 text-primary font-medium text-sm leading-[21px]">
                         <p className="font-Raleway font-medium text-sm leading-[21px]">
-                         {readMore}
+                          {readMore}
                         </p>
-                        
+
                         <ArrowUpRight size={24} />
                       </div>
                     </div>
                   </div>
                 </Link>
-                ))
-              }
-
-            
+              ))}
             </div>
             <div className="flex justify-center pt-6 lg:pt-8">
               <button className="flex items-center gap-2 py-3 px-4 w-[157px] h-[52px] rounded-[48px] bg-[#248C80] load_more">
-                <p className="font-Raleway font-semibold text-sm lg:text-base leading-[21pxpx] lg:leading-6 text-white">
+                <p className="font-Raleway font-semibold text-sm lg:text-base leading-[21px] lg:leading-6 text-white">
                   See all Post
                 </p>
                 <span className="bg-white rounded-full w-7 h-7 flex justify-center items-center">
-                  <CaretRight size={20} className='text-success' />
+                  <CaretRight size={20} className="text-success" />
                 </span>
               </button>
             </div>

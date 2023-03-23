@@ -18,7 +18,7 @@ const Banner = () => {
             <div className="product-card">
               <button
                 type=""
-                className="font-Raleway font-bold text-sm lg:text-base w-[192px] leading-[21pxpx] lg:leading-6 py-2 text-yellow md:py-3 border border-yellow rounded-[5px] z-[1] relative overflow-hidden banner-btn"
+                className="font-Raleway font-bold text-sm lg:text-base w-[192px] leading-[21px] lg:leading-6 py-2 text-yellow md:py-3 border border-yellow rounded-[5px] z-[1] relative overflow-hidden banner-btn"
               >
                 View
               </button>
@@ -43,7 +43,7 @@ const Banner = () => {
             <div className="product-card">
               <button
                 type=""
-                className="font-Raleway font-bold text-sm lg:text-base w-[192px] leading-[21pxpx] lg:leading-6 py-2 text-yellow md:py-3 border border-yellow rounded-[5px] z-[1] relative overflow-hidden banner-btn"
+                className="font-Raleway font-bold text-sm lg:text-base w-[192px] leading-[21px] lg:leading-6 py-2 text-yellow md:py-3 border border-yellow rounded-[5px] z-[1] relative overflow-hidden banner-btn"
               >
                 View
               </button>

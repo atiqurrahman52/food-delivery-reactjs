@@ -2,8 +2,8 @@ import { CaretRight } from "@phosphor-icons/react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { productData } from "../../data/sharedData/productData";
-import lemon from '../../assets/image/food/lemon.png';
-import strawberry from '../../assets/image/food/strawberry.png';
+import lemon from "../../assets/image/food/lemon.png";
+import strawberry from "../../assets/image/food/strawberry.png";
 
 const CustomerFavorites = () => {
   return (
@@ -22,7 +22,7 @@ const CustomerFavorites = () => {
                 <h3 className="font-Playfair font-bold text-2xl lg:text-5xl leading-[29px] lg:leading-[58px] text-primary mb-2">
                   Customer Favorites
                 </h3>
-                <p className="font-Raleway font-medium text-sm leading-[21pxpx] text-primary/60">
+                <p className="font-Raleway font-medium text-sm leading-[21px] text-primary/60">
                   Lorem ipsum dolor sit amet consectetur. i psum Lorem dolor sit
                   amet consectetur.
                 </p>
@@ -43,7 +43,7 @@ const CustomerFavorites = () => {
                 <h3 className="font-Playfair font-bold text-2xl lg:text-5xl leading-[29px] lg:leading-[58px] text-primary mb-2 text-center">
                   Customer Favorites
                 </h3>
-                <p className="font-Raleway font-medium text-sm leading-[21pxpx] text-primary/60 text-center">
+                <p className="font-Raleway font-medium text-sm leading-[21px] text-primary/60 text-center">
                   Lorem ipsum dolor sit amet consectetur. i psum Lorem dolor sit
                   amet consectetur.
                 </p>
@@ -70,13 +70,13 @@ const CustomerFavorites = () => {
                       </p>
                       <p className="font-Playfair font-bold text-xl lg:text-2xl text-success leading-[28px] lg:leading-[34px]">
                         ${price}
-                        <span className="font-Raleway text-sm lg:text-base leading-[21pxpx] text-primary">
+                        <span className="font-Raleway text-sm lg:text-base leading-[21px] text-primary">
                           /kg
                         </span>
                       </p>
                       <button
                         type=""
-                        className="font-Raleway font-medium text-sm lg:text-base leading-[21pxpx] lg:leading-6 py-2 text-success md:py-3 w-full border border-success rounded-[5px] z-[1] relative overflow-hidden add-to-cart-btn"
+                        className="font-Raleway font-medium text-sm lg:text-base leading-[21px] lg:leading-6 py-2 text-success md:py-3 w-full border border-success rounded-[5px] z-[1] relative overflow-hidden add-to-cart-btn"
                       >
                         Add to cart
                       </button>
