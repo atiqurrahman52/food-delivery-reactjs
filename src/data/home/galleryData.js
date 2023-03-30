@@ -4,7 +4,6 @@ import image3 from "../../assets/image/gallery/image-3.webp";
 import image4 from "../../assets/image/gallery/image-4.webp";
 import image5 from "../../assets/image/gallery/image-5.webp";
 import image6 from "../../assets/image/gallery/image-6.webp";
-import image7 from "../../assets/image/gallery/image-7.jpg";
 import image8 from "../../assets/image/gallery/image-8.webp";
 
 const galleryData = [
@@ -34,7 +33,7 @@ const galleryData = [
   },
   {
     id: 6,
-    img: image7,
+   
   },
   {
     id: 7,

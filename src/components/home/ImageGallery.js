@@ -25,7 +25,7 @@ const ImageGallery = () => {
             >
               <Masonry gutter="24px">
                 {galleryData.map(({ id, img }) => (
-                  <img src={img} />
+                  <img key={id} src={img} alt='' />
                 ))}
               </Masonry>
             </ResponsiveMasonry>
