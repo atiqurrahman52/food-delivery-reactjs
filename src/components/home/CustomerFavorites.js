@@ -7,30 +7,11 @@ import strawberry from "../../assets/image/food/strawberry.png";
 
 const CustomerFavorites = () => {
   return (
-    <section id="customer-favorites">
+    <section>
       <div className="bg-[#F3F4EF]">
         <div className="container">
           <div className="py-10 lg:py-20">
-            {/* <div className="flex justify-between items-center gap-6">
-              <div className="hidden lg:block">
-                <img src="./assets/image/food/lemon.png" alt="" />
-              </div>
-              <div className="flex flex-col items-center mb-10 lg:mb-14">
-                <h3 className="font-edwardian text-[32px] lg:text-[80px] leading-[38px] text-primary opacity-[0.2]">
-                  Our Products
-                </h3>
-                <h3 className="font-Playfair font-bold text-2xl lg:text-5xl leading-[29px] lg:leading-[58px] text-primary mb-2">
-                  Customer Favorites
-                </h3>
-                <p className="font-Raleway font-medium text-sm leading-[21px] text-primary/60">
-                  Lorem ipsum dolor sit amet consectetur. i psum Lorem dolor sit
-                  amet consectetur.
-                </p>
-              </div>
-              <div className="hidden lg:block">
-                <img src="./assets/image/food/strawberry.png" alt="" />
-              </div>
-            </div> */}
+           
 
             <div className="relative">
               <div className="xl:block hidden absolute lg:-left-24 lg:-top-16">

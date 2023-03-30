@@ -5,16 +5,16 @@ import { navBarData } from "../../data/navigation/navBarData";
 import { socialData } from "../../data/sharedData/socialData";
 const Footer = () => {
   return (
-    <div>
+
       <footer id="footer mb-14">
         <div className="footer-background">
           <div className="container">
             <div className="grid grid-cols-12 py-10 xl:py-20">
               <div className="col-span-12 md:col-span-6 lg:col-span-4 mb-5 md:mb-0 text-center md:text-left">
                 <div className="mb-8 flex justify-center md:justify-start">
-                  <a href="#" className="inline-block w-fit">
+                  <Link to="/" className="inline-block w-fit">
                     <img src={logo} alt="" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="mb-4 lg:mb-6">
                   <h3 className="font-Raleway font-medium text-base text-yellow leading-6">
@@ -113,17 +113,17 @@ const Footer = () => {
               </div>
               <ul className="flex space-x-6">
                 <li className="font-Roboto text-xs lg:text-sm leading-[18px] lg:leading-[21px] text-white">
-                  <a href="#">Privacy Policy</a>
+                  <Link to="#">Privacy Policy</Link>
                 </li>
                 <li className="font-Roboto text-xs lg:text-sm leading-[18px] lg:leading-[21px] text-white">
-                  <a href="#">Terms of Service</a>
+                  <Link to="#">Terms of Service</Link>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </footer>
-    </div>
+
   );
 };
 

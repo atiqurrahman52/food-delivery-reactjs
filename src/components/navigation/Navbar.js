@@ -164,7 +164,7 @@ const Navbar = () => {
               id="cart-menu"
               className="absolute z-50 top-full right-0 pt-10"
             >
-              <div className="relative bg-[#F9F6F1] max-w-[425px] h-[564px] shadow-[0_24px_48px_-12px_rgba(0,0,0,0.18)] rounded-lg p-4 lg:p-6">
+              <div className="relative bg-[#F9F6F1] max-w-[425px] shadow-[0_24px_48px_-12px_rgba(0,0,0,0.18)] rounded-lg p-4 lg:p-6">
                 <p className="font-Playfair font-bold text-base lg:text-xl text-primary mb-4 pt-5">
                   Your Cart 
                 </p>
@@ -292,7 +292,7 @@ const Navbar = () => {
               id="mob-cart-menu"
               className="absolute z-50 top-7 left-0 right-0 pt-10 mx-2"
             >
-              <div className="relative bg-[#F9F6F1] max-w-[425px] h-[564px] shadow-[0_24px_48px_-12px_rgba(0,0,0,0.18)] rounded-lg p-4 lg:p-6">
+              <div className="relative bg-[#F9F6F1] max-w-[425px]  shadow-[0_24px_48px_-12px_rgba(0,0,0,0.18)] rounded-lg p-4 lg:p-6">
                 <p className="font-Playfair font-bold text-base lg:text-xl text-primary mb-4 pt-5">
                   Your Cart
                 </p>
@@ -458,6 +458,7 @@ const Navbar = () => {
           {/* <!-- Mobile screen end --> */}
         </nav>
       </div>
+      
     </header>
 
     {isModalVisible && <SearchModal setIsModalVisible ={setIsModalVisible} />}

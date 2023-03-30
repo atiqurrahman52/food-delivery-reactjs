@@ -2,7 +2,7 @@ import React from "react";
 
 const DeliveryWorks = () => {
   return (
-    <section id="delivery-process">
+    <section>
       <div className="bg-[#F5F7EC]">
         <div className="container">
           <div className="py-10 lg:py-20">
