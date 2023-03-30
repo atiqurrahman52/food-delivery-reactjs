@@ -211,3 +211,11 @@
 /* .scrollbar-hidden{
   scrollbar-width:none
 } */
+
+
+.swiper-pagination-bullets {
+  /* bottom: -5% !important; */
+}
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  @apply bg-success rounded-full;
+}

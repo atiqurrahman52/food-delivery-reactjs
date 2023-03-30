@@ -202,7 +202,7 @@ const BillingAddress = () => {
                       </label>
                       <br />
                       <input
-                        className="border border-primary/40 rounded w-full px-4 py-2"
+                        className="border border-primary/40 rounded w-full px-4 py-2 focus:outline-none"
                         type="number"
                         id="name"
                         name="name"
