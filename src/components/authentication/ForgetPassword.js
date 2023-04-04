@@ -35,7 +35,7 @@ const ForgetPassword = () => {
                 className="w-full h-12 border border-success outline-none px-2 lg:px-4 text-success rounded"
                 type="email"
                 name=""
-                value=""
+                
                 placeholder="example@info"
               />
               <button

@@ -53,7 +53,7 @@ const BillingSidebar = ({ label, handleNext }) => {
           className="h-[70px] w-full px-3 border border-[#B2BCCA] rounded outline-none"
           type=""
           name=""
-          value=""
+          
           placeholder="Type here..."
         />
       </div>

@@ -1,8 +1,6 @@
-import { Cardholder, EyeSlash, MapPin, User } from "@phosphor-icons/react";
+import {  EyeSlash} from "@phosphor-icons/react";
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import user from "../assets/image/profile/user.webp";
 import UserMenuBar from "../components/userProfile/UserMenuBar";
 
 const Profile = () => {

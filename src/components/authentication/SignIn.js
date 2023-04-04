@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import signIn from "../../assets/image/auth/sign-in.webp";
 import logo from "../../assets/image/logo/logo.webp";
+import { EyeSlash } from "@phosphor-icons/react";
 const SignIn = () => {
   return (
     <div className="grid grid-cols-12 gap-3">
@@ -30,10 +31,10 @@ const SignIn = () => {
                   Your Email
                 </label>
                 <input
-                  className="w-[292px] h-10 lg:h-12 border border-[#A3A3A5] rounded outline-none px-2 lg:px-4"
+                  className="w-[292px] h-10 lg:h-12 border border-[#A3A3A5] focus:border-success text-success rounded outline-none px-2 lg:px-4"
                   type="email"
                   name=""
-                  value=""
+             
                   placeholder="Your Email"
                 />
               </div>
@@ -47,14 +48,13 @@ const SignIn = () => {
                 </label>
                 <div className="relative">
                   <span className="absolute top-1/2 right-3 -translate-y-1/2">
-                    {" "}
-                    <i className="ph ph-eye"></i>{" "}
+                  <EyeSlash size={20} />
                   </span>
                   <input
-                    className="w-[292px] h-10 lg:h-12 border border-[#A3A3A5] rounded outline-none px-2 lg:px-4"
+                    className="w-[292px] h-10 lg:h-12 border border-[#A3A3A5] focus:border-success text-success rounded outline-none px-2 lg:px-4"
                     type="password"
                     name=""
-                    value=""
+                   
                     placeholder="Your Password"
                   />
                 </div>

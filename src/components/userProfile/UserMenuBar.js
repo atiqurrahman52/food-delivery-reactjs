@@ -1,7 +1,5 @@
-import { Cardholder, MapPin, User } from "@phosphor-icons/react";
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-// import user from "../assets/image/profile/user.webp";
+import {  NavLink } from "react-router-dom";
 import user from "../../assets/image/profile/user.webp";
 import { userMenuBarData } from "../../data/userProfile/userMenuBarData";
 const UserMenuBar = () => {

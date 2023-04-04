@@ -57,7 +57,7 @@ const Newsletter = () => {
                   <input
                     type=""
                     name=""
-                    value=""
+                  
                     className="w-full h-[56px] px-2 outline-none font-Raleway font-medium text-xs text-[#151515] opacity-40"
                     placeholder="Your email address..."
                   />

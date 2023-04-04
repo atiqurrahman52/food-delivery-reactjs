@@ -55,7 +55,7 @@ const BlogDetailsBanner = ({ data }) => {
                     />
                   </svg>
                 </Link>
-                <a href="#">
+                <Link to="#">
                   <svg
                     width="24"
                     height="25"
@@ -70,8 +70,8 @@ const BlogDetailsBanner = ({ data }) => {
                       fill="#2231BC"
                     />
                   </svg>
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="#">
                   <svg
                     width="24"
                     height="25"
@@ -84,8 +84,8 @@ const BlogDetailsBanner = ({ data }) => {
                       fill="#1DA1F2"
                     />
                   </svg>
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="#">
                   <svg
                     width="24"
                     height="25"
@@ -98,7 +98,7 @@ const BlogDetailsBanner = ({ data }) => {
                       fill="#2058CD"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
 

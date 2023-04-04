@@ -89,7 +89,7 @@ const PaymentStep = ({ currentStep, handlePrev, handleSubmit }) => {
                     placeholder="Izak Newton"
                     type="text"
                     name=""
-                    value=""
+                  
                   />
                 </div>
                 <div className="mb-4 lg:mb-6">
@@ -104,7 +104,7 @@ const PaymentStep = ({ currentStep, handlePrev, handleSubmit }) => {
                     placeholder="433 566 3778 98882"
                     type="number"
                     name=""
-                    value=""
+                   
                   />
                 </div>
 

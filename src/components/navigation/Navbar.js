@@ -32,7 +32,7 @@ const Navbar = () => {
                 navBarData.map(({id,title,path}) =>(
                     <li key={id}>
                     <NavLink
-                      className="nav_link font-Raleway font-semibold text-primary text-sm md:text-base leading-6 activePage"
+                      className="nav_link font-Raleway font-semibold text-primary text-sm md:text-base leading-6"
                       to={path}
                     >
                     {title}
