@@ -11,7 +11,7 @@ const BillingAddress = () => {
       <div className="container">
         <div className="py-4 lg:py-8">
           <div className="grid grid-cols-12 gap-6">
-            <div className="col-span-12 md:col-span-4">
+            <div className="col-span-12 md:col-span-5">
               <UserMenuBar />
             </div>
 
