@@ -43,10 +43,10 @@ const SearchModal = ({ setIsModalVisible }) => {
         </div>
           { 
             searchText && (
-              items.length < 1 ? "No data found!" :
-            <ul>
+            items.length < 1 ? "No data found!" :
+            <ul className="shadow-[0_24px_48px_-12px_rgba(0,0,0,0.18)] bg-white py-5 px-6 rounded mt-3">
               {
-                items.map((item, i) => <li className="text-primary/40 pl-2" key={i}>{item}</li>)
+                items.map((item, i) => <li className="text-primary/40 my-3" key={i}>{item}</li>)
               }
             </ul>
           )}
