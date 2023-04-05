@@ -39,6 +39,8 @@ const Product = () => {
                     filter ? "opacity-100 visible" : "opacity-0 invisible"
                   } transition-all duration-300 absolute pt-[14px] lg:pt-[15px] md:-right-[134px] z-10`}
                 >
+               
+                 
                   <div className="bg-[#F9F6F1] shadow-[0_24px_48px_-12px_rgba(0,0,0,0.18)] p-4 w-[261px] h-auto right-0 rounded-lg">
                     <p className="font-Playfair font-bold text-base lg:text-xl leading-6 lg:leading-[30px] mb-4">
                       Filter
@@ -66,6 +68,7 @@ const Product = () => {
                       </p>
                     </div>
                   </div>
+                 
                 </div>
               </div>
 
@@ -128,7 +131,7 @@ const Product = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {productData.map(({ id, img, productName, bgColor, price }) => (
-              // <a href="../pages/product-details.html">
+            
               <Link to={`/product-details/${id}`}>
                 <div
                   style={{ backgroundColor: bgColor }}

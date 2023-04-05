@@ -18,6 +18,7 @@ import PaymentOptions from "./pages/PaymentOptions";
 import ProductDetails from "./pages/ProductDetails";
 import RecipesDetails from "./pages/RecipesDetails";
 import NotFound from "./components/shared/NotFound";
+import Toggle from "./components/test/Toggle";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path="/recipes" element={<Recipes />} />
         <Route path="/recipes-details/:id" element={<RecipesDetails />} />
         <Route path="*"  element={<NotFound />} />
+        <Route path="toggle"  element={<Toggle />} />
       </Route>
     </Routes>
   );

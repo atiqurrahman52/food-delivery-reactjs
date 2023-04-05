@@ -213,7 +213,7 @@ const ProductDescription = ({ singleProduct }) => {
           </div>
 
           <div className="flex w-max ml-auto space-x-3 lg:space-x-3 pt-4 lg:pt-6">
-            <a href="#">
+            <Link to="#">
               <svg
                 width="32"
                 height="32"
@@ -227,9 +227,9 @@ const ProductDescription = ({ singleProduct }) => {
                   fill="white"
                 />
               </svg>
-            </a>
+            </Link>
 
-            <a href="#">
+            <Link to="#">
               <svg
                 width="32"
                 height="32"
@@ -243,8 +243,8 @@ const ProductDescription = ({ singleProduct }) => {
                   fill="white"
                 />
               </svg>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <svg
                 width="32"
                 height="32"
@@ -268,7 +268,7 @@ const ProductDescription = ({ singleProduct }) => {
                   stroke-linejoin="round"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
